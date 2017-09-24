@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EB54B3AAED4A3AB68E78ABE /* Pods_Motivetica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EA85AAF70C6D224CECAD61 /* Pods_Motivetica.framework */; };
 		CEB9938A1F73203C00083A2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB993891F73203C00083A2F /* AppDelegate.swift */; };
 		CEB9938C1F73203C00083A2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB9938B1F73203C00083A2F /* ViewController.swift */; };
 		CEB9938F1F73203C00083A2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB9938D1F73203C00083A2F /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44EA85AAF70C6D224CECAD61 /* Pods_Motivetica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motivetica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B662B04524C9793BDBF5416 /* Pods-Motivetica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivetica.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motivetica/Pods-Motivetica.release.xcconfig"; sourceTree = "<group>"; };
 		CEB993861F73203C00083A2F /* Motivetica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motivetica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB993891F73203C00083A2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB9938B1F73203C00083A2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		CEB993901F73203C00083A2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB993931F73203C00083A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEB993951F73203C00083A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8FB72C494CDFA577563501D /* Pods-Motivetica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivetica.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Motivetica/Pods-Motivetica.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EB54B3AAED4A3AB68E78ABE /* Pods_Motivetica.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C1BDBC9C93DDCC8B96C1457 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8FB72C494CDFA577563501D /* Pods-Motivetica.debug.xcconfig */,
+				5B662B04524C9793BDBF5416 /* Pods-Motivetica.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C70D5F3F4E038C7F9CD35AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44EA85AAF70C6D224CECAD61 /* Pods_Motivetica.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CEB9937D1F73203C00083A2F = {
 			isa = PBXGroup;
 			children = (
 				CEB993881F73203C00083A2F /* Motivetica */,
 				CEB993871F73203C00083A2F /* Products */,
+				1C1BDBC9C93DDCC8B96C1457 /* Pods */,
+				C70D5F3F4E038C7F9CD35AF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEB993981F73203C00083A2F /* Build configuration list for PBXNativeTarget "Motivetica" */;
 			buildPhases = (
+				F3D47237274BB51A6789B17A /* [CP] Check Pods Manifest.lock */,
 				CEB993821F73203C00083A2F /* Sources */,
 				CEB993831F73203C00083A2F /* Frameworks */,
 				CEB993841F73203C00083A2F /* Resources */,
+				5320BE200EA255ABD65FA8F7 /* [CP] Embed Pods Frameworks */,
+				6C401368C26C2619AD13CDE9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5320BE200EA255ABD65FA8F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Motivetica/Pods-Motivetica-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C401368C26C2619AD13CDE9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Motivetica/Pods-Motivetica-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3D47237274BB51A6789B17A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEB993821F73203C00083A2F /* Sources */ = {
@@ -272,6 +347,7 @@
 		};
 		CEB993991F73203C00083A2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8FB72C494CDFA577563501D /* Pods-Motivetica.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +363,7 @@
 		};
 		CEB9939A1F73203C00083A2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B662B04524C9793BDBF5416 /* Pods-Motivetica.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

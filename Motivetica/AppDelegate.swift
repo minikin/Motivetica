@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Motivetica
 //
-//  Created by Sasha Minikin on 9/21/17.
+//  Created by Sasha Prokhorenko on 9/21/17.
 //  Copyright © 2017 Sasha Prokhorenko. All rights reserved.
 //
 
