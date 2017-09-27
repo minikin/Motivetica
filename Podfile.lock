@@ -8,11 +8,13 @@ PODS:
   - RxCocoa (4.0.0-beta.0):
     - RxSwift (~> 4.0.0-beta.0)
   - RxSwift (4.0.0-beta.0)
+  - SwiftLint (0.22.0)
 
 DEPENDENCIES:
   - RxAlamofire (from `https://github.com/gaplo917/RxAlamofire.git`, tag `4.0.0`)
   - RxCocoa (~> 4.0.0-beta.0)
   - RxSwift (~> 4.0.0-beta.0)
+  - SwiftLint
 
 EXTERNAL SOURCES:
   RxAlamofire:
@@ -29,7 +31,8 @@ SPEC CHECKSUMS:
   RxAlamofire: 035676ea6de4e6468984ccaabb9c71940c9340a2
   RxCocoa: 8d809675f4e89c5c4c5a6900bbd11fe632ad5d86
   RxSwift: e0899fae37065c16db976cc5e3c957e4e388869c
+  SwiftLint: 1134786caedd2caab0560d2f36b76414a5a56808
 
-PODFILE CHECKSUM: a21ba3424a86080fa28528b8f0a66a9b30e641cc
+PODFILE CHECKSUM: d05a9bae91adcc71860efb0e420a94d5e76126b6
 
 COCOAPODS: 1.2.0

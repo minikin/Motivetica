@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4EB54B3AAED4A3AB68E78ABE /* Pods_Motivetica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EA85AAF70C6D224CECAD61 /* Pods_Motivetica.framework */; };
+		CE4678001F7C334100DB9361 /* MotiveticaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4677FF1F7C334100DB9361 /* MotiveticaTests.swift */; };
+		CE46780E1F7C334E00DB9361 /* MotiveticaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46780D1F7C334E00DB9361 /* MotiveticaUITests.swift */; };
 		CEB9938A1F73203C00083A2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB993891F73203C00083A2F /* AppDelegate.swift */; };
 		CEB9938C1F73203C00083A2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB9938B1F73203C00083A2F /* ViewController.swift */; };
 		CEB9938F1F73203C00083A2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB9938D1F73203C00083A2F /* Main.storyboard */; };
@@ -15,9 +17,32 @@
 		CEB993941F73203C00083A2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB993921F73203C00083A2F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CE4678021F7C334100DB9361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEB9937E1F73203C00083A2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEB993851F73203C00083A2F;
+			remoteInfo = Motivetica;
+		};
+		CE4678101F7C334E00DB9361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEB9937E1F73203C00083A2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEB993851F73203C00083A2F;
+			remoteInfo = Motivetica;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		44EA85AAF70C6D224CECAD61 /* Pods_Motivetica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motivetica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B662B04524C9793BDBF5416 /* Pods-Motivetica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivetica.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motivetica/Pods-Motivetica.release.xcconfig"; sourceTree = "<group>"; };
+		CE4677FD1F7C334100DB9361 /* MotiveticaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotiveticaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4677FF1F7C334100DB9361 /* MotiveticaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotiveticaTests.swift; sourceTree = "<group>"; };
+		CE4678011F7C334100DB9361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE46780B1F7C334E00DB9361 /* MotiveticaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotiveticaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE46780D1F7C334E00DB9361 /* MotiveticaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotiveticaUITests.swift; sourceTree = "<group>"; };
+		CE46780F1F7C334E00DB9361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEB993861F73203C00083A2F /* Motivetica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motivetica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB993891F73203C00083A2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB9938B1F73203C00083A2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +54,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CE4677FA1F7C334100DB9361 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4678081F7C334E00DB9361 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEB993831F73203C00083A2F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,10 +96,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CE4677FE1F7C334100DB9361 /* MotiveticaTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE4677FF1F7C334100DB9361 /* MotiveticaTests.swift */,
+				CE4678011F7C334100DB9361 /* Info.plist */,
+			);
+			path = MotiveticaTests;
+			sourceTree = "<group>";
+		};
+		CE46780C1F7C334E00DB9361 /* MotiveticaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE46780D1F7C334E00DB9361 /* MotiveticaUITests.swift */,
+				CE46780F1F7C334E00DB9361 /* Info.plist */,
+			);
+			path = MotiveticaUITests;
+			sourceTree = "<group>";
+		};
 		CEB9937D1F73203C00083A2F = {
 			isa = PBXGroup;
 			children = (
 				CEB993881F73203C00083A2F /* Motivetica */,
+				CE4677FE1F7C334100DB9361 /* MotiveticaTests */,
+				CE46780C1F7C334E00DB9361 /* MotiveticaUITests */,
 				CEB993871F73203C00083A2F /* Products */,
 				1C1BDBC9C93DDCC8B96C1457 /* Pods */,
 				C70D5F3F4E038C7F9CD35AF4 /* Frameworks */,
@@ -71,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				CEB993861F73203C00083A2F /* Motivetica.app */,
+				CE4677FD1F7C334100DB9361 /* MotiveticaTests.xctest */,
+				CE46780B1F7C334E00DB9361 /* MotiveticaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +152,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CE4677FC1F7C334100DB9361 /* MotiveticaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4678061F7C334100DB9361 /* Build configuration list for PBXNativeTarget "MotiveticaTests" */;
+			buildPhases = (
+				CE4677F91F7C334100DB9361 /* Sources */,
+				CE4677FA1F7C334100DB9361 /* Frameworks */,
+				CE4677FB1F7C334100DB9361 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE4678031F7C334100DB9361 /* PBXTargetDependency */,
+			);
+			name = MotiveticaTests;
+			productName = MotiveticaTests;
+			productReference = CE4677FD1F7C334100DB9361 /* MotiveticaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE46780A1F7C334E00DB9361 /* MotiveticaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4678121F7C334E00DB9361 /* Build configuration list for PBXNativeTarget "MotiveticaUITests" */;
+			buildPhases = (
+				CE4678071F7C334E00DB9361 /* Sources */,
+				CE4678081F7C334E00DB9361 /* Frameworks */,
+				CE4678091F7C334E00DB9361 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE4678111F7C334E00DB9361 /* PBXTargetDependency */,
+			);
+			name = MotiveticaUITests;
+			productName = MotiveticaUITests;
+			productReference = CE46780B1F7C334E00DB9361 /* MotiveticaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		CEB993851F73203C00083A2F /* Motivetica */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEB993981F73203C00083A2F /* Build configuration list for PBXNativeTarget "Motivetica" */;
@@ -121,6 +218,16 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Sasha Prokhorenko";
 				TargetAttributes = {
+					CE4677FC1F7C334100DB9361 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CEB993851F73203C00083A2F;
+					};
+					CE46780A1F7C334E00DB9361 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CEB993851F73203C00083A2F;
+					};
 					CEB993851F73203C00083A2F = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -141,11 +248,27 @@
 			projectRoot = "";
 			targets = (
 				CEB993851F73203C00083A2F /* Motivetica */,
+				CE4677FC1F7C334100DB9361 /* MotiveticaTests */,
+				CE46780A1F7C334E00DB9361 /* MotiveticaUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CE4677FB1F7C334100DB9361 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4678091F7C334E00DB9361 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEB993841F73203C00083A2F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -207,6 +330,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CE4677F91F7C334100DB9361 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4678001F7C334100DB9361 /* MotiveticaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4678071F7C334E00DB9361 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE46780E1F7C334E00DB9361 /* MotiveticaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEB993821F73203C00083A2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,6 +356,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE4678031F7C334100DB9361 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEB993851F73203C00083A2F /* Motivetica */;
+			targetProxy = CE4678021F7C334100DB9361 /* PBXContainerItemProxy */;
+		};
+		CE4678111F7C334E00DB9361 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEB993851F73203C00083A2F /* Motivetica */;
+			targetProxy = CE4678101F7C334E00DB9361 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CEB9938D1F73203C00083A2F /* Main.storyboard */ = {
@@ -238,6 +390,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CE4678041F7C334100DB9361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GW82A8W73Z;
+				INFOPLIST_FILE = MotiveticaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.minikin.MotiveticaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Motivetica.app/Motivetica";
+			};
+			name = Debug;
+		};
+		CE4678051F7C334100DB9361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GW82A8W73Z;
+				INFOPLIST_FILE = MotiveticaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.minikin.MotiveticaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Motivetica.app/Motivetica";
+			};
+			name = Release;
+		};
+		CE4678131F7C334E00DB9361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GW82A8W73Z;
+				INFOPLIST_FILE = MotiveticaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.minikin.MotiveticaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Motivetica;
+			};
+			name = Debug;
+		};
+		CE4678141F7C334E00DB9361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GW82A8W73Z;
+				INFOPLIST_FILE = MotiveticaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.minikin.MotiveticaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Motivetica;
+			};
+			name = Release;
+		};
 		CEB993961F73203C00083A2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -380,6 +594,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CE4678061F7C334100DB9361 /* Build configuration list for PBXNativeTarget "MotiveticaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4678041F7C334100DB9361 /* Debug */,
+				CE4678051F7C334100DB9361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE4678121F7C334E00DB9361 /* Build configuration list for PBXNativeTarget "MotiveticaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4678131F7C334E00DB9361 /* Debug */,
+				CE4678141F7C334E00DB9361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CEB993811F73203C00083A2F /* Build configuration list for PBXProject "Motivetica" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
