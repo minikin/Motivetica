@@ -12,12 +12,12 @@
 		033EF1CD1F82E982003808AF /* Quote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033EF1C91F82E982003808AF /* Quote+CoreDataProperties.swift */; };
 		033EF1CE1F82E982003808AF /* Author+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033EF1CA1F82E982003808AF /* Author+CoreDataClass.swift */; };
 		033EF1CF1F82E982003808AF /* Author+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033EF1CB1F82E982003808AF /* Author+CoreDataProperties.swift */; };
+		033EF1DA1F82EC32003808AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033EF1D91F82EC32003808AF /* Main.storyboard */; };
 		4EB54B3AAED4A3AB68E78ABE /* Pods_Motivetica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EA85AAF70C6D224CECAD61 /* Pods_Motivetica.framework */; };
 		CE4678001F7C334100DB9361 /* MotiveticaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4677FF1F7C334100DB9361 /* MotiveticaTests.swift */; };
 		CE46780E1F7C334E00DB9361 /* MotiveticaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46780D1F7C334E00DB9361 /* MotiveticaUITests.swift */; };
 		CEB9938A1F73203C00083A2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB993891F73203C00083A2F /* AppDelegate.swift */; };
 		CEB9938C1F73203C00083A2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB9938B1F73203C00083A2F /* ViewController.swift */; };
-		CEB9938F1F73203C00083A2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB9938D1F73203C00083A2F /* Main.storyboard */; };
 		CEB993911F73203C00083A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB993901F73203C00083A2F /* Assets.xcassets */; };
 		CEB993941F73203C00083A2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB993921F73203C00083A2F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -45,6 +45,7 @@
 		033EF1C91F82E982003808AF /* Quote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quote+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		033EF1CA1F82E982003808AF /* Author+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataClass.swift"; sourceTree = "<group>"; };
 		033EF1CB1F82E982003808AF /* Author+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		033EF1D91F82EC32003808AF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		44EA85AAF70C6D224CECAD61 /* Pods_Motivetica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motivetica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B662B04524C9793BDBF5416 /* Pods-Motivetica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivetica.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motivetica/Pods-Motivetica.release.xcconfig"; sourceTree = "<group>"; };
 		CE4677FD1F7C334100DB9361 /* MotiveticaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotiveticaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,7 +57,6 @@
 		CEB993861F73203C00083A2F /* Motivetica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motivetica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB993891F73203C00083A2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB9938B1F73203C00083A2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CEB9938E1F73203C00083A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEB993901F73203C00083A2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB993931F73203C00083A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEB993951F73203C00083A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,12 +130,63 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		033EF1D51F82EAB4003808AF /* LaunchScreen */ = {
+		033EF1D51F82EAB4003808AF /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
 				CEB993921F73203C00083A2F /* LaunchScreen.storyboard */,
 			);
-			path = LaunchScreen;
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		033EF1D61F82EBDD003808AF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				033EF1DC1F82EC80003808AF /* Resources */,
+				033EF1DB1F82EC6F003808AF /* AppDelegate */,
+				CEB9938B1F73203C00083A2F /* ViewController.swift */,
+				033EF1D81F82EBF4003808AF /* Views */,
+				033EF1D71F82EBE9003808AF /* Supporting Files */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		033EF1D71F82EBE9003808AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEB993951F73203C00083A2F /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		033EF1D81F82EBF4003808AF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				033EF1D91F82EC32003808AF /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		033EF1DB1F82EC6F003808AF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CEB993891F73203C00083A2F /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		033EF1DC1F82EC80003808AF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEB993901F73203C00083A2F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		033EF1DD1F82EC93003808AF /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 		1C1BDBC9C93DDCC8B96C1457 /* Pods */ = {
@@ -198,16 +249,13 @@
 		CEB993881F73203C00083A2F /* Motivetica */ = {
 			isa = PBXGroup;
 			children = (
-				033EF1D51F82EAB4003808AF /* LaunchScreen */,
-				CEB993951F73203C00083A2F /* Info.plist */,
-				CEB993891F73203C00083A2F /* AppDelegate.swift */,
-				CEB9938B1F73203C00083A2F /* ViewController.swift */,
-				CEB993901F73203C00083A2F /* Assets.xcassets */,
 				033EF1D11F82EA0F003808AF /* About */,
+				033EF1D61F82EBDD003808AF /* App */,
 				033EF1D31F82EA31003808AF /* Home */,
-				CEB9938D1F73203C00083A2F /* Main.storyboard */,
 				033EF1D01F82EA00003808AF /* QuotesList */,
+				033EF1DD1F82EC93003808AF /* Theme */,
 				033EF1D21F82EA16003808AF /* UserQuote */,
+				033EF1D51F82EAB4003808AF /* Welcome */,
 			);
 			path = Motivetica;
 			sourceTree = "<group>";
@@ -336,9 +384,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033EF1DA1F82EC32003808AF /* Main.storyboard in Resources */,
 				CEB993941F73203C00083A2F /* LaunchScreen.storyboard in Resources */,
 				CEB993911F73203C00083A2F /* Assets.xcassets in Resources */,
-				CEB9938F1F73203C00083A2F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,14 +499,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CEB9938D1F73203C00083A2F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEB9938E1F73203C00083A2F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CEB993921F73203C00083A2F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
