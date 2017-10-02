@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		033EF1B71F82E49A003808AF /* Motivetica.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 033EF1B41F82E2F9003808AF /* Motivetica.xcdatamodeld */; };
+		033EF1CC1F82E982003808AF /* Quote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033EF1C81F82E982003808AF /* Quote+CoreDataClass.swift */; };
+		033EF1CD1F82E982003808AF /* Quote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033EF1C91F82E982003808AF /* Quote+CoreDataProperties.swift */; };
+		033EF1CE1F82E982003808AF /* Author+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033EF1CA1F82E982003808AF /* Author+CoreDataClass.swift */; };
+		033EF1CF1F82E982003808AF /* Author+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033EF1CB1F82E982003808AF /* Author+CoreDataProperties.swift */; };
 		4EB54B3AAED4A3AB68E78ABE /* Pods_Motivetica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EA85AAF70C6D224CECAD61 /* Pods_Motivetica.framework */; };
 		CE4678001F7C334100DB9361 /* MotiveticaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4677FF1F7C334100DB9361 /* MotiveticaTests.swift */; };
 		CE46780E1F7C334E00DB9361 /* MotiveticaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46780D1F7C334E00DB9361 /* MotiveticaUITests.swift */; };
@@ -35,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		033EF1B51F82E2F9003808AF /* Motivetica.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Motivetica.xcdatamodel; sourceTree = "<group>"; };
+		033EF1C81F82E982003808AF /* Quote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quote+CoreDataClass.swift"; sourceTree = "<group>"; };
+		033EF1C91F82E982003808AF /* Quote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quote+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		033EF1CA1F82E982003808AF /* Author+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataClass.swift"; sourceTree = "<group>"; };
+		033EF1CB1F82E982003808AF /* Author+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		44EA85AAF70C6D224CECAD61 /* Pods_Motivetica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motivetica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B662B04524C9793BDBF5416 /* Pods-Motivetica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivetica.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motivetica/Pods-Motivetica.release.xcconfig"; sourceTree = "<group>"; };
 		CE4677FD1F7C334100DB9361 /* MotiveticaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotiveticaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +89,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		033EF1D01F82EA00003808AF /* QuotesList */ = {
+			isa = PBXGroup;
+			children = (
+				033EF1D41F82EA3C003808AF /* Models */,
+			);
+			path = QuotesList;
+			sourceTree = "<group>";
+		};
+		033EF1D11F82EA0F003808AF /* About */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		033EF1D21F82EA16003808AF /* UserQuote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserQuote;
+			sourceTree = "<group>";
+		};
+		033EF1D31F82EA31003808AF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		033EF1D41F82EA3C003808AF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				033EF1B41F82E2F9003808AF /* Motivetica.xcdatamodeld */,
+				033EF1C81F82E982003808AF /* Quote+CoreDataClass.swift */,
+				033EF1C91F82E982003808AF /* Quote+CoreDataProperties.swift */,
+				033EF1CA1F82E982003808AF /* Author+CoreDataClass.swift */,
+				033EF1CB1F82E982003808AF /* Author+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		033EF1D51F82EAB4003808AF /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CEB993921F73203C00083A2F /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
 		1C1BDBC9C93DDCC8B96C1457 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,12 +198,16 @@
 		CEB993881F73203C00083A2F /* Motivetica */ = {
 			isa = PBXGroup;
 			children = (
+				033EF1D51F82EAB4003808AF /* LaunchScreen */,
+				CEB993951F73203C00083A2F /* Info.plist */,
 				CEB993891F73203C00083A2F /* AppDelegate.swift */,
 				CEB9938B1F73203C00083A2F /* ViewController.swift */,
-				CEB9938D1F73203C00083A2F /* Main.storyboard */,
 				CEB993901F73203C00083A2F /* Assets.xcassets */,
-				CEB993921F73203C00083A2F /* LaunchScreen.storyboard */,
-				CEB993951F73203C00083A2F /* Info.plist */,
+				033EF1D11F82EA0F003808AF /* About */,
+				033EF1D31F82EA31003808AF /* Home */,
+				CEB9938D1F73203C00083A2F /* Main.storyboard */,
+				033EF1D01F82EA00003808AF /* QuotesList */,
+				033EF1D21F82EA16003808AF /* UserQuote */,
 			);
 			path = Motivetica;
 			sourceTree = "<group>";
@@ -362,7 +425,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033EF1CF1F82E982003808AF /* Author+CoreDataProperties.swift in Sources */,
+				033EF1CE1F82E982003808AF /* Author+CoreDataClass.swift in Sources */,
+				033EF1CD1F82E982003808AF /* Quote+CoreDataProperties.swift in Sources */,
 				CEB9938C1F73203C00083A2F /* ViewController.swift in Sources */,
+				033EF1B71F82E49A003808AF /* Motivetica.xcdatamodeld in Sources */,
+				033EF1CC1F82E982003808AF /* Quote+CoreDataClass.swift in Sources */,
 				CEB9938A1F73203C00083A2F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -643,6 +711,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		033EF1B41F82E2F9003808AF /* Motivetica.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				033EF1B51F82E2F9003808AF /* Motivetica.xcdatamodel */,
+			);
+			currentVersion = 033EF1B51F82E2F9003808AF /* Motivetica.xcdatamodel */;
+			path = Motivetica.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CEB9937E1F73203C00083A2F /* Project object */;
 }
