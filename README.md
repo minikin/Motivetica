@@ -1,5 +1,8 @@
 #  MOTIVETICA
 
+[![Build Status](https://travis-ci.org/spiilka/Motivetica.svg?branch=develop)](https://travis-ci.org/spiilka/Motivetica)
+
+
 More info soon.
 
 
