@@ -7,7 +7,8 @@ env:
   - WORKSPACE=Motivetica.xcworkspace
   - IOS_SDK=iphonesimulator11.0
   matrix:
-    - DESTINATION="OS=10.3.1,name=iPhone 7 Plus"    SDK="$IOS_SDK" SCHEME="$IOS_SCHEME"  RUN_TESTS="YES"
+    - DESTINATION="OS=11.0,name=iPhone 8"    SDK="$IOS_SDK" SCHEME="$IOS_SCHEME"  RUN_TESTS="NN"
+    - DESTINATION="OS=10.3.1,name=iPhone 7 Plus"    SDK="$IOS_SDK" SCHEME="$IOS_SCHEME"  RUN_TESTS="NO"
     - DESTINATION="OS=9.0,name=iPhone 6"           SDK="$IOS_SDK" SCHEME="$IOS_SCHEME"  RUN_TESTS="NO"
     - DESTINATION="OS=8.1,name=iPhone 4S"          SDK="$IOS_SDK" SCHEME="$IOS_SCHEME"  RUN_TESTS="NO"
 before_install:
