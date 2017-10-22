@@ -1,2 +1,5 @@
+disabled_rules:
+  - force_cast
+  - trailing_whitespace
 excluded:
   - Pods

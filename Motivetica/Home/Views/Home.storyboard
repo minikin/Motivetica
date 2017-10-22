@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="odp-f7-zKy">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Typing Motivetica View Controller-->
+        <scene sceneID="3xW-61-TMO">
+            <objects>
+                <viewController id="odp-f7-zKy" customClass="TypingMotiveticaViewController" customModule="Motivetica" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Oh-3a-YCk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYb-Fu-pvi">
+                                <rect key="frame" x="106" y="270" width="108" height="28"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" name="White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="Black"/>
+                        <constraints>
+                            <constraint firstItem="uYb-Fu-pvi" firstAttribute="centerX" secondItem="4Oh-3a-YCk" secondAttribute="centerX" id="l0r-Ez-AZL"/>
+                            <constraint firstItem="uYb-Fu-pvi" firstAttribute="centerY" secondItem="4Oh-3a-YCk" secondAttribute="centerY" id="znA-9H-BJd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ios-bC-a3B"/>
+                    </view>
+                    <connections>
+                        <segue destination="u6b-xy-gJr" kind="show" identifier="toHomeFormStart" id="ObH-qZ-Cw8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jrb-hO-8XU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20" y="56"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fKy-Wk-U98">
+            <objects>
+                <viewController id="u6b-xy-gJr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kqQ-Gb-YBQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="A4F-qP-u2f">
+                                <rect key="frame" x="83.5" y="53" width="153" height="153"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNs-nc-D3w">
+                                <rect key="frame" x="83" y="53" width="154" height="153"/>
+                                <connections>
+                                    <segue destination="nUr-lJ-WgD" kind="show" identifier="toAbout" id="mso-W3-OQB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4O-HW-K9g">
+                                <rect key="frame" x="265" y="518" width="39" height="30"/>
+                                <state key="normal" title="toList"/>
+                                <connections>
+                                    <segue destination="pBD-mA-z6x" kind="show" id="hFo-Wm-hNg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Uk-3S-ee9">
+                                <rect key="frame" x="16" y="518" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <segue destination="Lc5-vG-IEj" kind="show" id="4bD-RM-UfP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cNs-nc-D3w" firstAttribute="bottom" secondItem="A4F-qP-u2f" secondAttribute="bottom" id="BO6-oU-7Pf"/>
+                            <constraint firstItem="cNs-nc-D3w" firstAttribute="trailing" secondItem="A4F-qP-u2f" secondAttribute="trailing" id="BYe-DX-2ny"/>
+                            <constraint firstItem="9vP-YJ-in3" firstAttribute="bottom" secondItem="4Uk-3S-ee9" secondAttribute="bottom" constant="20" id="JJN-W2-ryO"/>
+                            <constraint firstItem="cNs-nc-D3w" firstAttribute="top" secondItem="A4F-qP-u2f" secondAttribute="top" id="PP1-KJ-C43"/>
+                            <constraint firstItem="cNs-nc-D3w" firstAttribute="leading" secondItem="A4F-qP-u2f" secondAttribute="leading" id="UsV-Md-9Zl"/>
+                            <constraint firstItem="A4F-qP-u2f" firstAttribute="top" secondItem="9vP-YJ-in3" secondAttribute="top" constant="33" id="fAH-z9-sCu"/>
+                            <constraint firstItem="4Uk-3S-ee9" firstAttribute="leading" secondItem="9vP-YJ-in3" secondAttribute="leading" constant="16" id="fXd-GT-wQF"/>
+                            <constraint firstItem="9vP-YJ-in3" firstAttribute="bottom" secondItem="p4O-HW-K9g" secondAttribute="bottom" constant="20" id="hTe-12-Pgh"/>
+                            <constraint firstItem="A4F-qP-u2f" firstAttribute="centerX" secondItem="kqQ-Gb-YBQ" secondAttribute="centerX" id="kMR-0P-iR8"/>
+                            <constraint firstItem="9vP-YJ-in3" firstAttribute="trailing" secondItem="p4O-HW-K9g" secondAttribute="trailing" constant="16" id="t1e-IG-bVB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9vP-YJ-in3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4lH-Bd-IMt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885" y="54.929577464788736"/>
+        </scene>
+        <!--QuotesList-->
+        <scene sceneID="o7V-Pt-e8p">
+            <objects>
+                <viewControllerPlaceholder storyboardName="QuotesList" id="pBD-mA-z6x" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fbD-Qn-yO3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="573"/>
+        </scene>
+        <!--UserQuote-->
+        <scene sceneID="ZPa-kM-RiX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserQuote" id="Lc5-vG-IEj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qDF-ei-e5b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="787" y="573"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="2fG-nh-QQb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="About" id="nUr-lJ-WgD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fu6-Ob-aed" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1282" y="54"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="153" height="153"/>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
