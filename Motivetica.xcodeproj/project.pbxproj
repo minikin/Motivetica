@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4EB54B3AAED4A3AB68E78ABE /* Pods_Motivetica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EA85AAF70C6D224CECAD61 /* Pods_Motivetica.framework */; };
+		033EF1B71F82E49A003808AF /* Motivetica.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 033EF1B41F82E2F9003808AF /* Motivetica.xcdatamodeld */; };
+		033EF1CC1F82E982003808AF /* Quote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033EF1C81F82E982003808AF /* Quote+CoreDataClass.swift */; };
+		033EF1CD1F82E982003808AF /* Quote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033EF1C91F82E982003808AF /* Quote+CoreDataProperties.swift */; };
+		033EF1CE1F82E982003808AF /* Author+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033EF1CA1F82E982003808AF /* Author+CoreDataClass.swift */; };
+		033EF1CF1F82E982003808AF /* Author+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033EF1CB1F82E982003808AF /* Author+CoreDataProperties.swift */; };
+		033EF1DA1F82EC32003808AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033EF1D91F82EC32003808AF /* Main.storyboard */; };
+		B79A0DC5488019B337924647 /* Pods_Motivetica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2CED4EF8FACD223C76434A /* Pods_Motivetica.framework */; };
 		CE4678001F7C334100DB9361 /* MotiveticaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4677FF1F7C334100DB9361 /* MotiveticaTests.swift */; };
 		CE46780E1F7C334E00DB9361 /* MotiveticaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46780D1F7C334E00DB9361 /* MotiveticaUITests.swift */; };
 		CEB9938A1F73203C00083A2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB993891F73203C00083A2F /* AppDelegate.swift */; };
 		CEB9938C1F73203C00083A2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB9938B1F73203C00083A2F /* ViewController.swift */; };
-		CEB9938F1F73203C00083A2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB9938D1F73203C00083A2F /* Main.storyboard */; };
 		CEB993911F73203C00083A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB993901F73203C00083A2F /* Assets.xcassets */; };
 		CEB993941F73203C00083A2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB993921F73203C00083A2F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -35,8 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		44EA85AAF70C6D224CECAD61 /* Pods_Motivetica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motivetica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B662B04524C9793BDBF5416 /* Pods-Motivetica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivetica.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motivetica/Pods-Motivetica.release.xcconfig"; sourceTree = "<group>"; };
+		033EF1B51F82E2F9003808AF /* Motivetica.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Motivetica.xcdatamodel; sourceTree = "<group>"; };
+		033EF1C81F82E982003808AF /* Quote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quote+CoreDataClass.swift"; sourceTree = "<group>"; };
+		033EF1C91F82E982003808AF /* Quote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quote+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		033EF1CA1F82E982003808AF /* Author+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataClass.swift"; sourceTree = "<group>"; };
+		033EF1CB1F82E982003808AF /* Author+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		033EF1D91F82EC32003808AF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5A2CED4EF8FACD223C76434A /* Pods_Motivetica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motivetica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B55AEEF3BE4A6D58E873122 /* Pods-Motivetica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivetica.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Motivetica/Pods-Motivetica.debug.xcconfig"; sourceTree = "<group>"; };
+		ACA794AB07711264AE71B1A0 /* Pods-Motivetica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivetica.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motivetica/Pods-Motivetica.release.xcconfig"; sourceTree = "<group>"; };
 		CE4677FD1F7C334100DB9361 /* MotiveticaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotiveticaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4677FF1F7C334100DB9361 /* MotiveticaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotiveticaTests.swift; sourceTree = "<group>"; };
 		CE4678011F7C334100DB9361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,11 +58,9 @@
 		CEB993861F73203C00083A2F /* Motivetica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motivetica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB993891F73203C00083A2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB9938B1F73203C00083A2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CEB9938E1F73203C00083A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEB993901F73203C00083A2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB993931F73203C00083A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEB993951F73203C00083A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8FB72C494CDFA577563501D /* Pods-Motivetica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivetica.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Motivetica/Pods-Motivetica.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,28 +82,127 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EB54B3AAED4A3AB68E78ABE /* Pods_Motivetica.framework in Frameworks */,
+				B79A0DC5488019B337924647 /* Pods_Motivetica.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C1BDBC9C93DDCC8B96C1457 /* Pods */ = {
+		033EF1D01F82EA00003808AF /* QuotesList */ = {
 			isa = PBXGroup;
 			children = (
-				E8FB72C494CDFA577563501D /* Pods-Motivetica.debug.xcconfig */,
-				5B662B04524C9793BDBF5416 /* Pods-Motivetica.release.xcconfig */,
+				033EF1D41F82EA3C003808AF /* Models */,
 			);
-			name = Pods;
+			path = QuotesList;
 			sourceTree = "<group>";
 		};
-		C70D5F3F4E038C7F9CD35AF4 /* Frameworks */ = {
+		033EF1D11F82EA0F003808AF /* About */ = {
 			isa = PBXGroup;
 			children = (
-				44EA85AAF70C6D224CECAD61 /* Pods_Motivetica.framework */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		033EF1D21F82EA16003808AF /* UserQuote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserQuote;
+			sourceTree = "<group>";
+		};
+		033EF1D31F82EA31003808AF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		033EF1D41F82EA3C003808AF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				033EF1B41F82E2F9003808AF /* Motivetica.xcdatamodeld */,
+				033EF1C81F82E982003808AF /* Quote+CoreDataClass.swift */,
+				033EF1C91F82E982003808AF /* Quote+CoreDataProperties.swift */,
+				033EF1CA1F82E982003808AF /* Author+CoreDataClass.swift */,
+				033EF1CB1F82E982003808AF /* Author+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		033EF1D51F82EAB4003808AF /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				CEB993921F73203C00083A2F /* LaunchScreen.storyboard */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		033EF1D61F82EBDD003808AF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				033EF1DC1F82EC80003808AF /* Resources */,
+				033EF1DB1F82EC6F003808AF /* AppDelegate */,
+				CEB9938B1F73203C00083A2F /* ViewController.swift */,
+				033EF1D81F82EBF4003808AF /* Views */,
+				033EF1D71F82EBE9003808AF /* Supporting Files */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		033EF1D71F82EBE9003808AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		033EF1D81F82EBF4003808AF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				033EF1D91F82EC32003808AF /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		033EF1DB1F82EC6F003808AF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CEB993891F73203C00083A2F /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		033EF1DC1F82EC80003808AF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEB993901F73203C00083A2F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		033EF1DD1F82EC93003808AF /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		0CBDD03861A673A3B35B618C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A2CED4EF8FACD223C76434A /* Pods_Motivetica.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A1E6B37E6C91E7E7596B06D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B55AEEF3BE4A6D58E873122 /* Pods-Motivetica.debug.xcconfig */,
+				ACA794AB07711264AE71B1A0 /* Pods-Motivetica.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CE4677FE1F7C334100DB9361 /* MotiveticaTests */ = {
@@ -121,8 +230,8 @@
 				CE4677FE1F7C334100DB9361 /* MotiveticaTests */,
 				CE46780C1F7C334E00DB9361 /* MotiveticaUITests */,
 				CEB993871F73203C00083A2F /* Products */,
-				1C1BDBC9C93DDCC8B96C1457 /* Pods */,
-				C70D5F3F4E038C7F9CD35AF4 /* Frameworks */,
+				8A1E6B37E6C91E7E7596B06D /* Pods */,
+				0CBDD03861A673A3B35B618C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,12 +248,14 @@
 		CEB993881F73203C00083A2F /* Motivetica */ = {
 			isa = PBXGroup;
 			children = (
-				CEB993891F73203C00083A2F /* AppDelegate.swift */,
-				CEB9938B1F73203C00083A2F /* ViewController.swift */,
-				CEB9938D1F73203C00083A2F /* Main.storyboard */,
-				CEB993901F73203C00083A2F /* Assets.xcassets */,
-				CEB993921F73203C00083A2F /* LaunchScreen.storyboard */,
 				CEB993951F73203C00083A2F /* Info.plist */,
+				033EF1D11F82EA0F003808AF /* About */,
+				033EF1D61F82EBDD003808AF /* App */,
+				033EF1D31F82EA31003808AF /* Home */,
+				033EF1D01F82EA00003808AF /* QuotesList */,
+				033EF1DD1F82EC93003808AF /* Theme */,
+				033EF1D21F82EA16003808AF /* UserQuote */,
+				033EF1D51F82EAB4003808AF /* Welcome */,
 			);
 			path = Motivetica;
 			sourceTree = "<group>";
@@ -192,12 +303,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEB993981F73203C00083A2F /* Build configuration list for PBXNativeTarget "Motivetica" */;
 			buildPhases = (
-				F3D47237274BB51A6789B17A /* [CP] Check Pods Manifest.lock */,
+				EACDDECC45B68400A02F1918 /* [CP] Check Pods Manifest.lock */,
 				CEB993821F73203C00083A2F /* Sources */,
 				CEB993831F73203C00083A2F /* Frameworks */,
 				CEB993841F73203C00083A2F /* Resources */,
-				5320BE200EA255ABD65FA8F7 /* [CP] Embed Pods Frameworks */,
-				6C401368C26C2619AD13CDE9 /* [CP] Copy Pods Resources */,
+				0C5D1A6B07C5C57E48887B5E /* [CP] Embed Pods Frameworks */,
+				1F733DA5C99B9CC56933C112 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -273,16 +384,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033EF1DA1F82EC32003808AF /* Main.storyboard in Resources */,
 				CEB993941F73203C00083A2F /* LaunchScreen.storyboard in Resources */,
 				CEB993911F73203C00083A2F /* Assets.xcassets in Resources */,
-				CEB9938F1F73203C00083A2F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5320BE200EA255ABD65FA8F7 /* [CP] Embed Pods Frameworks */ = {
+		0C5D1A6B07C5C57E48887B5E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -297,7 +408,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Motivetica/Pods-Motivetica-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6C401368C26C2619AD13CDE9 /* [CP] Copy Pods Resources */ = {
+		1F733DA5C99B9CC56933C112 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -312,7 +423,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Motivetica/Pods-Motivetica-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F3D47237274BB51A6789B17A /* [CP] Check Pods Manifest.lock */ = {
+		EACDDECC45B68400A02F1918 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -350,7 +461,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033EF1CF1F82E982003808AF /* Author+CoreDataProperties.swift in Sources */,
+				033EF1CE1F82E982003808AF /* Author+CoreDataClass.swift in Sources */,
+				033EF1CD1F82E982003808AF /* Quote+CoreDataProperties.swift in Sources */,
 				CEB9938C1F73203C00083A2F /* ViewController.swift in Sources */,
+				033EF1B71F82E49A003808AF /* Motivetica.xcdatamodeld in Sources */,
+				033EF1CC1F82E982003808AF /* Quote+CoreDataClass.swift in Sources */,
 				CEB9938A1F73203C00083A2F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,14 +487,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CEB9938D1F73203C00083A2F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEB9938E1F73203C00083A2F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CEB993921F73203C00083A2F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -561,7 +669,7 @@
 		};
 		CEB993991F73203C00083A2F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8FB72C494CDFA577563501D /* Pods-Motivetica.debug.xcconfig */;
+			baseConfigurationReference = 9B55AEEF3BE4A6D58E873122 /* Pods-Motivetica.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -577,7 +685,7 @@
 		};
 		CEB9939A1F73203C00083A2F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B662B04524C9793BDBF5416 /* Pods-Motivetica.release.xcconfig */;
+			baseConfigurationReference = ACA794AB07711264AE71B1A0 /* Pods-Motivetica.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -631,6 +739,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		033EF1B41F82E2F9003808AF /* Motivetica.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				033EF1B51F82E2F9003808AF /* Motivetica.xcdatamodel */,
+			);
+			currentVersion = 033EF1B51F82E2F9003808AF /* Motivetica.xcdatamodel */;
+			path = Motivetica.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CEB9937E1F73203C00083A2F /* Project object */;
 }
