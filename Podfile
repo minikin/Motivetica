@@ -8,5 +8,16 @@ target 'Motivetica' do
   pod 'RxCocoa',    '~> 4.0'
   pod 'RxAlamofire'
   pod 'SwiftLint'
+  pod 'lottie-ios'
+  pod 'Fabric'
+  pod 'Crashlytics'
+  
+  target 'MotiveticaTests' do
+    inherit! :search_paths
+  end
+  
+  target 'MotiveticaUITests' do
+    inherit! :search_paths
+  end
   
 end

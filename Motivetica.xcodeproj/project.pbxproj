@@ -12,6 +12,8 @@
 		033EF1CD1F82E982003808AF /* Quote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033EF1C91F82E982003808AF /* Quote+CoreDataProperties.swift */; };
 		033EF1CE1F82E982003808AF /* Author+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033EF1CA1F82E982003808AF /* Author+CoreDataClass.swift */; };
 		033EF1CF1F82E982003808AF /* Author+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033EF1CB1F82E982003808AF /* Author+CoreDataProperties.swift */; };
+		4346E86BFF38C555C843792B /* Pods_MotiveticaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C77F4F28FB4CFFBA142C481 /* Pods_MotiveticaTests.framework */; };
+		4C07186AF50C8E356BA08FF9 /* Pods_MotiveticaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F2CCCAF1862F5981A2E6B9 /* Pods_MotiveticaUITests.framework */; };
 		B79A0DC5488019B337924647 /* Pods_Motivetica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2CED4EF8FACD223C76434A /* Pods_Motivetica.framework */; };
 		CE2B78251F9D2FC000E45E16 /* MotiveticaKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE2B78241F9D2FC000E45E16 /* MotiveticaKeys.plist */; };
 		CE2B78281F9D316A00E45E16 /* FilesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2B78271F9D316A00E45E16 /* FilesHelper.swift */; };
@@ -54,9 +56,14 @@
 		033EF1C91F82E982003808AF /* Quote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quote+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		033EF1CA1F82E982003808AF /* Author+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataClass.swift"; sourceTree = "<group>"; };
 		033EF1CB1F82E982003808AF /* Author+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		064C13A7094BF6D861F6AA6B /* Pods-MotiveticaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotiveticaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MotiveticaUITests/Pods-MotiveticaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2AD4669921A6EB4F184195C8 /* Pods-MotiveticaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotiveticaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MotiveticaTests/Pods-MotiveticaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A2CED4EF8FACD223C76434A /* Pods_Motivetica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motivetica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C77F4F28FB4CFFBA142C481 /* Pods_MotiveticaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MotiveticaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B55AEEF3BE4A6D58E873122 /* Pods-Motivetica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivetica.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Motivetica/Pods-Motivetica.debug.xcconfig"; sourceTree = "<group>"; };
+		A0FFA024855FD83AD477B5ED /* Pods-MotiveticaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotiveticaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MotiveticaUITests/Pods-MotiveticaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ACA794AB07711264AE71B1A0 /* Pods-Motivetica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivetica.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motivetica/Pods-Motivetica.release.xcconfig"; sourceTree = "<group>"; };
+		C2F2CCCAF1862F5981A2E6B9 /* Pods_MotiveticaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MotiveticaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2B78241F9D2FC000E45E16 /* MotiveticaKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MotiveticaKeys.plist; sourceTree = "<group>"; };
 		CE2B78271F9D316A00E45E16 /* FilesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesHelper.swift; sourceTree = "<group>"; };
 		CE2B78291F9D366800E45E16 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -79,6 +86,7 @@
 		CEB993951F73203C00083A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEF126941F9D15350007F7BA /* UserQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserQuoteViewController.swift; sourceTree = "<group>"; };
 		CEF1269E1F9D1B210007F7BA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E226DDC407D719F155D2FB69 /* Pods-MotiveticaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotiveticaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MotiveticaTests/Pods-MotiveticaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4346E86BFF38C555C843792B /* Pods_MotiveticaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C07186AF50C8E356BA08FF9 /* Pods_MotiveticaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				5A2CED4EF8FACD223C76434A /* Pods_Motivetica.framework */,
+				8C77F4F28FB4CFFBA142C481 /* Pods_MotiveticaTests.framework */,
+				C2F2CCCAF1862F5981A2E6B9 /* Pods_MotiveticaUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -193,6 +205,10 @@
 			children = (
 				9B55AEEF3BE4A6D58E873122 /* Pods-Motivetica.debug.xcconfig */,
 				ACA794AB07711264AE71B1A0 /* Pods-Motivetica.release.xcconfig */,
+				2AD4669921A6EB4F184195C8 /* Pods-MotiveticaTests.debug.xcconfig */,
+				E226DDC407D719F155D2FB69 /* Pods-MotiveticaTests.release.xcconfig */,
+				A0FFA024855FD83AD477B5ED /* Pods-MotiveticaUITests.debug.xcconfig */,
+				064C13A7094BF6D861F6AA6B /* Pods-MotiveticaUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -374,9 +390,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE4678061F7C334100DB9361 /* Build configuration list for PBXNativeTarget "MotiveticaTests" */;
 			buildPhases = (
+				416A2BEAE8C33094AC230636 /* [CP] Check Pods Manifest.lock */,
 				CE4677F91F7C334100DB9361 /* Sources */,
 				CE4677FA1F7C334100DB9361 /* Frameworks */,
 				CE4677FB1F7C334100DB9361 /* Resources */,
+				33F62B1290FF1C29B87CFF25 /* [CP] Embed Pods Frameworks */,
+				23E4BE13528F04A644723AC7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -392,9 +411,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE4678121F7C334E00DB9361 /* Build configuration list for PBXNativeTarget "MotiveticaUITests" */;
 			buildPhases = (
+				709B8B6535C85A9DF7CA6255 /* [CP] Check Pods Manifest.lock */,
 				CE4678071F7C334E00DB9361 /* Sources */,
 				CE4678081F7C334E00DB9361 /* Frameworks */,
 				CE4678091F7C334E00DB9361 /* Resources */,
+				79615E8B91A7453CA0B0F1AB /* [CP] Embed Pods Frameworks */,
+				9C4AB6B1C6CF4707BD12F0D8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -414,6 +436,7 @@
 				CEB993821F73203C00083A2F /* Sources */,
 				CEB993831F73203C00083A2F /* Frameworks */,
 				CEB993841F73203C00083A2F /* Resources */,
+				CEAD74891F9E87E400B02434 /* Fabric */,
 				CEF126A01F9D1B7F0007F7BA /* SwiftLint */,
 				0C5D1A6B07C5C57E48887B5E /* [CP] Embed Pods Frameworks */,
 				1F733DA5C99B9CC56933C112 /* [CP] Copy Pods Resources */,
@@ -535,6 +558,110 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Motivetica/Pods-Motivetica-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		23E4BE13528F04A644723AC7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MotiveticaTests/Pods-MotiveticaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33F62B1290FF1C29B87CFF25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MotiveticaTests/Pods-MotiveticaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		416A2BEAE8C33094AC230636 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		709B8B6535C85A9DF7CA6255 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		79615E8B91A7453CA0B0F1AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MotiveticaUITests/Pods-MotiveticaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C4AB6B1C6CF4707BD12F0D8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MotiveticaUITests/Pods-MotiveticaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEAD74891F9E87E400B02434 /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 1d1073e481f03a63080060b0030c34fc51059f00 9b38a8c84d786cd912959c0fca71510aa9bfd7072f43a7a0732ddeb7b83496ce";
+		};
 		CEF126A01F9D1B7F0007F7BA /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -631,6 +758,7 @@
 /* Begin XCBuildConfiguration section */
 		CE4678041F7C334100DB9361 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AD4669921A6EB4F184195C8 /* Pods-MotiveticaTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -647,6 +775,7 @@
 		};
 		CE4678051F7C334100DB9361 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E226DDC407D719F155D2FB69 /* Pods-MotiveticaTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -663,6 +792,7 @@
 		};
 		CE4678131F7C334E00DB9361 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0FFA024855FD83AD477B5ED /* Pods-MotiveticaUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GW82A8W73Z;
@@ -678,6 +808,7 @@
 		};
 		CE4678141F7C334E00DB9361 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 064C13A7094BF6D861F6AA6B /* Pods-MotiveticaUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GW82A8W73Z;
