@@ -7,26 +7,31 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+import RxAlamofire
 
 class HomeViewController: UIViewController {
+  
+  var session: URLSession {
+    let config = URLSessionConfiguration.default
+    config.httpAdditionalHeaders =  readKeysFrom("MotiveticaKeys")
+    return URLSession(configuration: config)
+  }
+  
+  let url =  URL(string: "https://motivetica.com/parse/classes/Quote")!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-    /*
-    // MARK: - Navigation
+    _ = session.rx
+      .json(url: url)
+      .observeOn(MainScheduler.instance)
+      .subscribe { print($0) }
+  }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  
+  @IBAction func unwindFromAbout(_ sender: UIStoryboardSegue){
+    print("Back from About. Do nothing")
+  }
 }

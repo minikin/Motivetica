@@ -29,6 +29,7 @@
 		CEB9938A1F73203C00083A2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB993891F73203C00083A2F /* AppDelegate.swift */; };
 		CEB993911F73203C00083A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB993901F73203C00083A2F /* Assets.xcassets */; };
 		CEB993941F73203C00083A2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB993921F73203C00083A2F /* LaunchScreen.storyboard */; };
+		CEF043FC1F9FE21B00D1190F /* QuotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF043FB1F9FE21B00D1190F /* QuotesCell.swift */; };
 		CEF126951F9D15350007F7BA /* UserQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF126941F9D15350007F7BA /* UserQuoteViewController.swift */; };
 		CEF1269F1F9D1B210007F7BA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1269E1F9D1B210007F7BA /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -84,6 +85,7 @@
 		CEB993901F73203C00083A2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB993931F73203C00083A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEB993951F73203C00083A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF043FB1F9FE21B00D1190F /* QuotesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesCell.swift; sourceTree = "<group>"; };
 		CEF126941F9D15350007F7BA /* UserQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserQuoteViewController.swift; sourceTree = "<group>"; };
 		CEF1269E1F9D1B210007F7BA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E226DDC407D719F155D2FB69 /* Pods-MotiveticaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotiveticaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MotiveticaTests/Pods-MotiveticaTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				CE2B78361F9D3F6800E45E16 /* QuotesList.storyboard */,
+				CEF043FB1F9FE21B00D1190F /* QuotesCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -726,6 +729,7 @@
 				CE2B78391F9D3F8000E45E16 /* QuotesListViewController.swift in Sources */,
 				033EF1CC1F82E982003808AF /* Quote+CoreDataClass.swift in Sources */,
 				CEB9938A1F73203C00083A2F /* AppDelegate.swift in Sources */,
+				CEF043FC1F9FE21B00D1190F /* QuotesCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
