@@ -30,8 +30,5 @@ class HomeViewController: UIViewController {
       .subscribe { print($0) }
   }
 
-  
-  @IBAction func unwindFromAbout(_ sender: UIStoryboardSegue){
-    print("Back from About. Do nothing")
-  }
+  @IBAction func unwindFromAbout(_ sender: UIStoryboardSegue) {}
 }
