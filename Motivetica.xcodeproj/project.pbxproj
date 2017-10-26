@@ -187,6 +187,7 @@
 		033EF1DC1F82EC80003808AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CE5021F21FA284680051FB7E /* Fonts */,
 				CEB993901F73203C00083A2F /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -297,6 +298,13 @@
 				CE46780F1F7C334E00DB9361 /* Info.plist */,
 			);
 			path = MotiveticaUITests;
+			sourceTree = "<group>";
+		};
+		CE5021F21FA284680051FB7E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		CEB9937D1F73203C00083A2F = {

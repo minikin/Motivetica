@@ -31,4 +31,5 @@ class HomeViewController: UIViewController {
   }
 
   @IBAction func unwindFromAbout(_ sender: UIStoryboardSegue) {}
+  @IBAction func unwindFromListOfQuotes(_ sender: UIStoryboardSegue) {}
 }
