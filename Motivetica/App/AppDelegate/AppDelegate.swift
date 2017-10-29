@@ -15,21 +15,25 @@ import Crashlytics
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
+  lazy var coreDataStack = CoreDataStack(modelName: CoreDataHelper.motiveticaModel)
   
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    
+    guard let rootViewController = window?.rootViewController as? TypingMotiveticaViewController else {
+      fatalError("Application Storyboard mis-configuration")
+    }
+    rootViewController.coreDataStack = coreDataStack
 
     Fabric.with([Crashlytics.self])
     return true
   }
   
-  lazy var persistentContainer: NSPersistentContainer = {
-    let container = NSPersistentContainer(name: "Motivetica")
-    container.loadPersistentStores(completionHandler: { (_, error) in
-      if let error = error as NSError? {
-        fatalError("Unresolved error \(error), \(error.userInfo)")
-      }
-    })
-    return container
-  }()
+  func applicationDidEnterBackground(_ application: UIApplication) {
+    coreDataStack.saveContext()
+  }
+  
+  func applicationWillTerminate(_ application: UIApplication) {
+    coreDataStack.saveContext()
+  }
 }

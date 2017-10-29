@@ -9,6 +9,9 @@
 import UIKit
 
 class TypingMotiveticaViewController: UIViewController {
+  
+  // MARK: - Properties
+  var coreDataStack: CoreDataStack!
 
   override func viewDidLoad() {
     super.viewDidLoad()

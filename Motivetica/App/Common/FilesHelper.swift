@@ -7,6 +7,8 @@
 //
 
 import Foundation
+
+/// Helper function to read sevrer ksys from .plist file.
 func readKeysFrom(_ plistWithName: String) -> [ String: String] {
   var motiveticaServerKeys = [ "": ""]
   if let url = Bundle.main.url(forResource: plistWithName, withExtension: "plist") {
@@ -16,7 +18,7 @@ func readKeysFrom(_ plistWithName: String) -> [ String: String] {
                                                                         options: [],
                                                                         format: nil) as! [ String: String]
     } catch {
-      assertionFailure("Check that your .plist file exist has a correct format!")
+      assertionFailure("Check that your .plist file exist and has a correct format!")
     }
   }
   return motiveticaServerKeys

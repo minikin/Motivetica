@@ -13,6 +13,7 @@ import RxAlamofire
 
 class HomeViewController: UIViewController {
   
+  // MARK: - Properties  
   var session: URLSession {
     let config = URLSessionConfiguration.default
     config.httpAdditionalHeaders =  readKeysFrom("MotiveticaKeys")
