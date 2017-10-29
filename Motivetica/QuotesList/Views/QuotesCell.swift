@@ -9,7 +9,7 @@
 import UIKit
 
 class QuotesCell: UICollectionViewCell {
-  
+
   override func prepareForReuse() {
     
   }

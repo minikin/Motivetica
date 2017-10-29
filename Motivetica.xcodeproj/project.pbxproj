@@ -140,21 +140,8 @@
 			children = (
 				CE2B78351F9D3F4800E45E16 /* Controllers */,
 				CE2B78341F9D3F4000E45E16 /* Views */,
-				033EF1D41F82EA3C003808AF /* Models */,
 			);
 			path = QuotesList;
-			sourceTree = "<group>";
-		};
-		033EF1D41F82EA3C003808AF /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				CE6E6C691FA620B4002FF3DB /* Author+CoreDataClass.swift */,
-				CE6E6C6A1FA620B4002FF3DB /* Author+CoreDataProperties.swift */,
-				033EF1B41F82E2F9003808AF /* Motivetica.xcdatamodeld */,
-				CE6E6C671FA620B4002FF3DB /* Quote+CoreDataClass.swift */,
-				CE6E6C681FA620B4002FF3DB /* Quote+CoreDataProperties.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		033EF1D51F82EAB4003808AF /* Welcome */ = {
@@ -343,16 +330,14 @@
 		CE6E6C601FA608D0002FF3DB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CE6E6C691FA620B4002FF3DB /* Author+CoreDataClass.swift */,
+				CE6E6C6A1FA620B4002FF3DB /* Author+CoreDataProperties.swift */,
+				033EF1B41F82E2F9003808AF /* Motivetica.xcdatamodeld */,
+				CE6E6C671FA620B4002FF3DB /* Quote+CoreDataClass.swift */,
+				CE6E6C681FA620B4002FF3DB /* Quote+CoreDataProperties.swift */,
 				CE6E6C611FA608DA002FF3DB /* CellDescriptor.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		CE6E6C651FA60C04002FF3DB /* Animation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Animation;
 			sourceTree = "<group>";
 		};
 		CE6E6C661FA614FF002FF3DB /* CoreDataSeed */ = {
@@ -403,16 +388,8 @@
 			children = (
 				CE2B783B1F9D408700E45E16 /* Views */,
 				CEF126931F9D15180007F7BA /* ViewController */,
-				CEF126921F9D15100007F7BA /* ViewModel */,
 			);
 			path = UserQuote;
-			sourceTree = "<group>";
-		};
-		CEF126921F9D15100007F7BA /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		CEF126931F9D15180007F7BA /* ViewController */ = {
@@ -426,7 +403,6 @@
 		CEF126961F9D15B80007F7BA /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				CE6E6C651FA60C04002FF3DB /* Animation */,
 				CEF1269D1F9D1B0F0007F7BA /* Controllers */,
 				CE2B78231F9D2E8B00E45E16 /* Views */,
 			);
@@ -1011,6 +987,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = U8369V84MM;
 				INFOPLIST_FILE = Motivetica/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

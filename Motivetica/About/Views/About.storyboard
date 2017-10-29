@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,18 +30,26 @@
                                     <constraint firstAttribute="width" constant="154" id="k6A-Rm-rxh"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESIGNED BY SPIILKA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frK-bo-0KU">
-                                <rect key="frame" x="124" y="314" width="166" height="18"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoD-gd-4Mu">
+                                <rect key="frame" x="124" y="308" width="166" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEVELOPED BY MINIKIN.ME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jn0-zY-COL">
-                                <rect key="frame" x="103" y="358" width="208" height="18"/>
+                                <state key="normal" title="DESIGNED BY SPIILKA">
+                                    <color key="titleColor" name="Black"/>
+                                </state>
+                                <connections>
+                                    <action selector="spiilkaDitPressed:" destination="3N2-an-chj" eventType="touchUpInside" id="Y8h-EK-xC1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tm-oe-ehh">
+                                <rect key="frame" x="103" y="353" width="208" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="DEVELOPED BY MINIKIN.ME">
+                                    <color key="titleColor" name="Black"/>
+                                </state>
+                                <connections>
+                                    <action selector="minikinDidPressed:" destination="3N2-an-chj" eventType="touchUpInside" id="Z7k-67-XRS"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALL RIGHTS RESERVED." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPJ-r0-kWX">
                                 <rect key="frame" x="117.66666666666669" y="446" width="179" height="18"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
@@ -65,6 +74,7 @@
                                     <constraint firstAttribute="height" constant="50" id="EfF-g0-eL9"/>
                                     <constraint firstAttribute="width" constant="50" id="OGF-gh-S8b"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" image="Close"/>
                                 <connections>
                                     <segue destination="Zsg-MA-ygV" kind="unwind" identifier="unwindFromAbout" unwindAction="unwindFromAbout:" id="1uZ-J1-z20"/>
@@ -73,23 +83,23 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="frK-bo-0KU" firstAttribute="centerX" secondItem="xz6-Xe-vDK" secondAttribute="centerX" id="0ZD-7K-y6k"/>
                             <constraint firstItem="pPJ-r0-kWX" firstAttribute="top" secondItem="T7x-Bg-Muq" secondAttribute="bottom" constant="8" id="31q-WP-0hO"/>
-                            <constraint firstItem="jn0-zY-COL" firstAttribute="centerX" secondItem="w2I-XE-FCA" secondAttribute="centerX" id="A90-34-Xhh"/>
                             <constraint firstItem="pPJ-r0-kWX" firstAttribute="centerX" secondItem="w2I-XE-FCA" secondAttribute="centerX" id="DwQ-lq-LRw"/>
-                            <constraint firstItem="jn0-zY-COL" firstAttribute="top" secondItem="frK-bo-0KU" secondAttribute="bottom" constant="26" id="KhC-p3-RAB"/>
+                            <constraint firstItem="SoD-gd-4Mu" firstAttribute="top" secondItem="xz6-Xe-vDK" secondAttribute="bottom" constant="74" id="JWy-lJ-eUh"/>
                             <constraint firstItem="lyh-3W-M7E" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3J-DP-xj4" secondAttribute="bottom" constant="8" id="Oz8-26-c5E"/>
                             <constraint firstItem="xz6-Xe-vDK" firstAttribute="centerX" secondItem="w2I-XE-FCA" secondAttribute="centerX" id="Ro8-3x-kQC"/>
                             <constraint firstItem="y3J-DP-xj4" firstAttribute="top" secondItem="pPJ-r0-kWX" secondAttribute="bottom" constant="8" id="TyD-yb-A9R"/>
+                            <constraint firstItem="1tm-oe-ehh" firstAttribute="centerX" secondItem="w2I-XE-FCA" secondAttribute="centerX" id="WUY-wK-jMN"/>
+                            <constraint firstItem="T7x-Bg-Muq" firstAttribute="top" secondItem="1tm-oe-ehh" secondAttribute="bottom" constant="37" id="Xn6-Kb-U7A"/>
+                            <constraint firstItem="SoD-gd-4Mu" firstAttribute="centerX" secondItem="w2I-XE-FCA" secondAttribute="centerX" id="aTP-lN-iSU"/>
                             <constraint firstItem="xz6-Xe-vDK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="d2V-Ol-8iH" secondAttribute="leading" constant="83" id="asT-ws-4FK"/>
                             <constraint firstItem="y3J-DP-xj4" firstAttribute="centerX" secondItem="w2I-XE-FCA" secondAttribute="centerX" id="c9a-CG-35i"/>
                             <constraint firstItem="d2V-Ol-8iH" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xz6-Xe-vDK" secondAttribute="trailing" constant="83" id="dOB-0i-uD3"/>
                             <constraint firstItem="T7x-Bg-Muq" firstAttribute="centerX" secondItem="w2I-XE-FCA" secondAttribute="centerX" id="eH5-zC-UvE"/>
-                            <constraint firstItem="T7x-Bg-Muq" firstAttribute="top" secondItem="jn0-zY-COL" secondAttribute="bottom" constant="44" id="fCM-eh-q5u"/>
                             <constraint firstItem="lyh-3W-M7E" firstAttribute="centerX" secondItem="w2I-XE-FCA" secondAttribute="centerX" id="hwb-5z-hf2"/>
                             <constraint firstItem="xz6-Xe-vDK" firstAttribute="top" secondItem="d2V-Ol-8iH" secondAttribute="top" constant="60" id="lq5-u8-fhV"/>
                             <constraint firstItem="d2V-Ol-8iH" firstAttribute="bottom" secondItem="lyh-3W-M7E" secondAttribute="bottom" constant="20" id="s3W-ox-qMZ"/>
-                            <constraint firstItem="frK-bo-0KU" firstAttribute="top" secondItem="xz6-Xe-vDK" secondAttribute="bottom" constant="80" id="yoj-LI-dLT"/>
+                            <constraint firstItem="1tm-oe-ehh" firstAttribute="top" secondItem="SoD-gd-4Mu" secondAttribute="bottom" constant="15" id="urh-ak-mtQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="d2V-Ol-8iH"/>
                     </view>
@@ -97,11 +107,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D07-ph-ljP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Zsg-MA-ygV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="50.625" y="-49.647887323943664"/>
+            <point key="canvasLocation" x="49.275362318840585" y="-49.728260869565219"/>
         </scene>
     </scenes>
     <resources>
         <image name="Close" width="22" height="22"/>
         <image name="Logo" width="153" height="153"/>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

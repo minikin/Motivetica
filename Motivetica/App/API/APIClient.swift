@@ -24,10 +24,31 @@ class APIClient {
   // MARK: - Properties
   static let sharedInstance = APIClient()
   
-  var session: URLSession {
+  private var session: URLSession {
     let config = URLSessionConfiguration.default
     config.httpAdditionalHeaders =  readKeysFrom("MotiveticaKeys")
     return URLSession(configuration: config)
   }
- 
+  
+  // MARK: - 
+  
+  func getAllQuotes() {
+    guard let quotesRequest = APIRouter.readAllQuotes.urlRequest else {
+      return
+    }
+    _ = session.rx
+      .json(request: quotesRequest)
+      .observeOn(MainScheduler.instance)
+      .subscribe { print($0) }
+  }
+  
+  func getAllAuthors() {
+    guard let authorsRequest = APIRouter.readAllQuotes.urlRequest else {
+      return
+    }
+    _ = session.rx
+      .json(request: authorsRequest)
+      .observeOn(MainScheduler.instance)
+      .subscribe { print($0) }
+  }
 }
