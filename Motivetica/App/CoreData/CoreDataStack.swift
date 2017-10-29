@@ -25,23 +25,18 @@ class CoreDataStack {
     return container
   }()
   
-  lazy var managedContext: NSManagedObjectContext = {
-    return self.storeContainer.viewContext
-  }()
+  private static var managedObjectContext: NSManagedObjectContext!
+  static var moc: NSManagedObjectContext! {
+    if managedObjectContext == nil {
+      fatalError("Core Data Stack has not been initialized")
+    }
+    return managedObjectContext
+  }
   
   // MARK: - Initializers
   init(modelName: String) {
     self.modelName = modelName
-  }
-  
-  // MARK: - Helpers
-  func saveContext () {
-    guard managedContext.hasChanges else { return }
-    do {
-      try managedContext.save()
-    } catch {
-      print("Unresolved error \(error)")
-    }
+    CoreDataStack.managedObjectContext = storeContainer.viewContext
   }
 }
 

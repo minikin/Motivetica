@@ -10,10 +10,13 @@ import UIKit
 
 class AboutViewController: UIViewController {
 
+  // MARK: - View Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
 
   }
+  
+  // MARK: - Actions
   
 //  @IBAction func openSpiilka(_ sender: UIButton) {
 //    guard let spiilkaURL = URL(string: "http://spiilka.com") else { return }
