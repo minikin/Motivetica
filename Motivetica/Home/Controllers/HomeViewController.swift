@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    apiClient.getAllAuthors()
+    apiClient.getAllQuotes()
   }
 
   // MARK: - Actions

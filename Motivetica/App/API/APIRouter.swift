@@ -47,6 +47,14 @@ enum APIRouter: URLRequestConvertible {
     var request = URLRequest(url: url.appendingPathComponent(self.path))
     request.httpMethod = self.method.rawValue
     request.timeoutInterval = TimeInterval(10 * 1000)
+    
+    switch self {
+    case .readNewQuotes:
+      request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+    default:
+      request.addValue("application/json", forHTTPHeaderField: "Accept")
+    }
+    
     return request
   }
 }

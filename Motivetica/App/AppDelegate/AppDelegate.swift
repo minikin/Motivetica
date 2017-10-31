@@ -20,11 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
-//    guard let rootViewController = window?.rootViewController as? TypingMotiveticaViewController else {
-//      fatalError("Application Storyboard mis-configuration")
-//    }
-//    rootViewController.coreDataStack = coreDataStack
-
     Fabric.with([Crashlytics.self])
     return true
   }

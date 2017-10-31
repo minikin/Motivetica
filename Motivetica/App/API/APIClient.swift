@@ -43,7 +43,7 @@ class APIClient {
   }
   
   func getAllAuthors() {
-    guard let authorsRequest = APIRouter.readAllQuotes.urlRequest else {
+    guard let authorsRequest = APIRouter.readlAllAuthors.urlRequest else {
       return
     }
     _ = session.rx
