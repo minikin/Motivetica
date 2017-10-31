@@ -7,29 +7,39 @@
 //
 
 import UIKit
+import Lottie
 
 class TypingMotiveticaViewController: UIViewController {
   
   // MARK: - Properties
   var coreDataStack: CoreDataStack!
 
+  // MARK: - ViewController LifeCycle
   override func viewDidLoad() {
     super.viewDidLoad()
-
   }
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(false)
+    mottiveticaLodingAnimation()
+  }
   
-    DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
+  // MARK: - Helpers
+  func mottiveticaLodingAnimation() {
+    let animationView = LOTAnimationView(name: "Intro")
+    animationView.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
+    animationView.center = self.view.center
+    animationView.contentMode = .scaleAspectFill
+    view.addSubview(animationView)
+    animationView.play{ finished in
+
+       self.navigateToHomeVC()
+    }
+  }
+
+  func navigateToHomeVC() {
+    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(200)) {
       self.performSegue(withIdentifier: "toHomeFormStart", sender: self)
     }
-    
   }
-  // MARK: - Navigation
-
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-  }
-
 }
