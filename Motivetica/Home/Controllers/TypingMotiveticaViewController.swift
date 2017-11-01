@@ -31,12 +31,12 @@ class TypingMotiveticaViewController: UIViewController {
     animationView.center = self.view.center
     animationView.contentMode = .scaleAspectFill
     view.addSubview(animationView)
-    animationView.play{ finished in
-
+    animationView.play { _ in
        self.navigateToHomeVC()
     }
   }
 
+  // MARK: - Navigation
   func navigateToHomeVC() {
     DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(200)) {
       self.performSegue(withIdentifier: "toHomeFormStart", sender: self)

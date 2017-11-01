@@ -13,11 +13,11 @@ class HomeViewController: UIViewController {
   // MARK: - Properties
   let apiClient = APIClient()
 
-  // MARK: - View LifeCycle
+  // MARK: - ViewController LifeCycle
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    apiClient.getAllQuotes()
+    //apiClient.getAllQuotes()
   }
 
   // MARK: - Actions
