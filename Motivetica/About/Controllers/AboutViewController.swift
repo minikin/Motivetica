@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AboutViewController: UIViewController {
+final class AboutViewController: UIViewController {
   
   // MARK: - IBOutlets
   @IBOutlet var backgroundView: UIView!
@@ -31,7 +31,6 @@ class AboutViewController: UIViewController {
   }
   
   // MARK: - Actions
-  
   @IBAction func spiilkaDitPressed(_ sender: UIButton) {
       guard let spiilkaURL = URL(string: WebPages.spiilka) else { return }
       UIApplication.shared.open(spiilkaURL, options: [:], completionHandler: nil)

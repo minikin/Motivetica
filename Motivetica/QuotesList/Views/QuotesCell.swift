@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QuotesCell: UICollectionViewCell {
+final class QuotesCell: UICollectionViewCell {
 
   override func prepareForReuse() {
     

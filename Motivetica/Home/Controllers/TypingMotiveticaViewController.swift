@@ -9,7 +9,7 @@
 import UIKit
 import Lottie
 
-class TypingMotiveticaViewController: UIViewController {
+final class TypingMotiveticaViewController: UIViewController {
   
   // MARK: - Properties
   var coreDataStack: CoreDataStack!

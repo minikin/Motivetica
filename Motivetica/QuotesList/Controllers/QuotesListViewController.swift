@@ -20,9 +20,9 @@ class QuotesListViewController: UIViewController {
   @IBOutlet weak var changeThemeButton: UIButton!
   
   // MARK: - Properties
-  let calendar = Calendar.current
-  let dateFormatter = DateFormatter()
-  var timer: Timer?
+  private let calendar = Calendar.current
+  private let dateFormatter = DateFormatter()
+  private var timer: Timer?
   
   // MARK: - ViewController LifeCycle
   override func viewDidLoad() {

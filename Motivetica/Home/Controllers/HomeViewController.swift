@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController {
   
   // MARK: - IBOutlets
   @IBOutlet var backgroundView: UIView!

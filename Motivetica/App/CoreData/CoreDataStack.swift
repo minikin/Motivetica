@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-class CoreDataStack {
+final class CoreDataStack {
 
   // MARK: - Properties
   private let modelName: String
