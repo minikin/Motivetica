@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3N2-an-chj">
-    <device id="retina5_5" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3N2-an-chj">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,18 +20,18 @@
             <objects>
                 <viewController id="3N2-an-chj" customClass="AboutViewController" customModule="Motivetica" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w2I-XE-FCA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="xz6-Xe-vDK">
-                                <rect key="frame" x="130" y="80" width="154" height="154"/>
+                                <rect key="frame" x="110.5" y="80" width="154" height="154"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="154" id="Mn2-MW-rVi"/>
                                     <constraint firstAttribute="width" constant="154" id="k6A-Rm-rxh"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoD-gd-4Mu">
-                                <rect key="frame" x="124" y="308" width="166" height="30"/>
+                                <rect key="frame" x="104.5" y="308" width="166" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="DESIGNED BY SPIILKA">
                                     <color key="titleColor" name="Black"/>
@@ -41,7 +41,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tm-oe-ehh">
-                                <rect key="frame" x="103" y="353" width="208" height="30"/>
+                                <rect key="frame" x="83.5" y="353" width="208" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="DEVELOPED BY MINIKIN.ME">
                                     <color key="titleColor" name="Black"/>
@@ -51,25 +51,25 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALL RIGHTS RESERVED." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPJ-r0-kWX">
-                                <rect key="frame" x="117.66666666666669" y="446" width="179" height="18"/>
+                                <rect key="frame" x="98" y="446" width="179" height="18"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COPYRIGHTS." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7x-Bg-Muq">
-                                <rect key="frame" x="155" y="420" width="104" height="18"/>
+                                <rect key="frame" x="135.5" y="420" width="104" height="18"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3J-DP-xj4">
-                                <rect key="frame" x="190" y="472" width="34" height="18"/>
+                                <rect key="frame" x="170.5" y="472" width="34" height="18"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyh-3W-M7E">
-                                <rect key="frame" x="182" y="666" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyh-3W-M7E" userLabel="Close">
+                                <rect key="frame" x="162.5" y="597" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="EfF-g0-eL9"/>
                                     <constraint firstAttribute="width" constant="50" id="OGF-gh-S8b"/>
@@ -103,6 +103,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="d2V-Ol-8iH"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="w2I-XE-FCA" id="CN0-Dj-Rr2"/>
+                        <outlet property="closeButton" destination="lyh-3W-M7E" id="Xgy-Ck-LCk"/>
+                        <outlet property="copyLabel" destination="T7x-Bg-Muq" id="wKS-fO-d4i"/>
+                        <outlet property="minikinButton" destination="1tm-oe-ehh" id="Ns7-HK-KUK"/>
+                        <outlet property="motiveticaLogo" destination="xz6-Xe-vDK" id="lhM-pS-DXe"/>
+                        <outlet property="rightsLabel" destination="pPJ-r0-kWX" id="F6C-G4-LAz"/>
+                        <outlet property="spiilkaButton" destination="SoD-gd-4Mu" id="Dfx-5a-JHs"/>
+                        <outlet property="yearLabel" destination="y3J-DP-xj4" id="0xF-cG-MPt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D07-ph-ljP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Zsg-MA-ygV" userLabel="Exit" sceneMemberID="exit"/>

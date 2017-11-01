@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="odp-f7-zKy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="odp-f7-zKy">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -153,6 +153,14 @@ OWN</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9vP-YJ-in3"/>
                     </view>
+                    <connections>
+                        <outlet property="arrowLeft" destination="tKW-5X-e4M" id="dsV-Aa-zLI"/>
+                        <outlet property="arrowRight" destination="e5S-EN-ffc" id="BGl-gL-62O"/>
+                        <outlet property="backgroundView" destination="kqQ-Gb-YBQ" id="CJ7-b1-eF7"/>
+                        <outlet property="manaLabel" destination="nSC-Jw-0P3" id="9Jc-TA-u7O"/>
+                        <outlet property="motiveticaLogo" destination="A4F-qP-u2f" id="fgF-43-SAS"/>
+                        <outlet property="typeOwnLabel" destination="Vbk-3c-koe" id="4w9-Mx-vSp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4lH-Bd-IMt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

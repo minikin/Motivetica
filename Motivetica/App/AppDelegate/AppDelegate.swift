@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                    didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
     Fabric.with([Crashlytics.self])
+    Theme.current.apply()
     return true
   }
   

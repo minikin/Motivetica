@@ -16,4 +16,10 @@ enum CoreDataHelper {
 
 enum UserKeys {
   static let firstAppLaunch = "previouslyLaunched"
+  static let selectedTheme = "SelectedTheme"
+}
+
+enum WebPages {
+  static let spiilka = "http://spiilka.com"
+  static let minikin = "http://minikin.me"
 }

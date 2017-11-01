@@ -35,6 +35,7 @@
 		CE6E6C6C1FA620B4002FF3DB /* Quote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6C681FA620B4002FF3DB /* Quote+CoreDataProperties.swift */; };
 		CE6E6C6D1FA620B4002FF3DB /* Author+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6C691FA620B4002FF3DB /* Author+CoreDataClass.swift */; };
 		CE6E6C6E1FA620B4002FF3DB /* Author+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6C6A1FA620B4002FF3DB /* Author+CoreDataProperties.swift */; };
+		CE7CE2201FA9F12400E05AF3 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CE21F1FA9F12400E05AF3 /* Theme.swift */; };
 		CEAC235B1FA9DA8300B71BC1 /* Intro.json in Resources */ = {isa = PBXBuildFile; fileRef = CEAC234E1FA9DA8200B71BC1 /* Intro.json */; };
 		CEAC235C1FA9DA8300B71BC1 /* img_0.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAC23501FA9DA8300B71BC1 /* img_0.png */; };
 		CEAC235D1FA9DA8300B71BC1 /* img_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAC23511FA9DA8300B71BC1 /* img_1.png */; };
@@ -110,6 +111,7 @@
 		CE6E6C681FA620B4002FF3DB /* Quote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quote+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CE6E6C691FA620B4002FF3DB /* Author+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataClass.swift"; sourceTree = "<group>"; };
 		CE6E6C6A1FA620B4002FF3DB /* Author+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE7CE21F1FA9F12400E05AF3 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		CEAC234E1FA9DA8200B71BC1 /* Intro.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Intro.json; sourceTree = "<group>"; };
 		CEAC23501FA9DA8300B71BC1 /* img_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_0.png; sourceTree = "<group>"; };
 		CEAC23511FA9DA8300B71BC1 /* img_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_1.png; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				CE6E6C601FA608D0002FF3DB /* Models */,
 				033EF1DC1F82EC80003808AF /* Resources */,
 				033EF1D71F82EBE9003808AF /* Supporting Files */,
+				CE7CE2211FA9F26F00E05AF3 /* Theme */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -382,6 +385,14 @@
 			children = (
 			);
 			path = CoreDataSeed;
+			sourceTree = "<group>";
+		};
+		CE7CE2211FA9F26F00E05AF3 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				CE7CE21F1FA9F12400E05AF3 /* Theme.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 		CE91116E1FA8866C000248C0 /* Intro Animation */ = {
@@ -835,6 +846,7 @@
 				CE03DF931FA893A900EFFB40 /* GlobalFunctions.swift in Sources */,
 				CE6E6C6C1FA620B4002FF3DB /* Quote+CoreDataProperties.swift in Sources */,
 				CE1EA7AC1FA6260A005C93C9 /* APIRouter.swift in Sources */,
+				CE7CE2201FA9F12400E05AF3 /* Theme.swift in Sources */,
 				CE6E6C5B1FA5FE8C002FF3DB /* Environment.swift in Sources */,
 				CE2B78331F9D3E9100E45E16 /* AboutViewController.swift in Sources */,
 				CE2B782C1F9D372800E45E16 /* TypingMotiveticaViewController.swift in Sources */,

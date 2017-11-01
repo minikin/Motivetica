@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vol-9B-Svv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vol-9B-Svv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -74,10 +74,17 @@
                                         <state key="normal" title="SAVE">
                                             <color key="titleColor" name="Black"/>
                                         </state>
+                                        <connections>
+                                            <action selector="saveQuoteToPhotos:" destination="vol-9B-Svv" eventType="touchUpInside" id="kbK-7P-0Zj"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LA6-wI-D3j">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LA6-wI-D3j" userLabel="ChnageTheme">
                                         <rect key="frame" x="143" y="0.0" width="24" height="24"/>
-                                        <state key="normal" image="BlackOval"/>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="Oval"/>
+                                        <connections>
+                                            <action selector="chnageAppTheme:" destination="vol-9B-Svv" eventType="touchUpInside" id="KZm-6e-KTv"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -110,8 +117,13 @@
                         <viewLayoutGuide key="safeArea" id="pKh-rb-UVE"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="JrE-PO-Gih" id="B2B-9G-Cmx"/>
+                        <outlet property="backgroundView" destination="fTg-hK-DRT" id="sLx-zi-aln"/>
+                        <outlet property="changeThemeButton" destination="LA6-wI-D3j" id="U9v-cp-zrf"/>
                         <outlet property="currentDayLabel" destination="XDu-9f-nJW" id="vaK-86-ZMY"/>
                         <outlet property="currentTimeLabel" destination="epc-EM-1yn" id="DhN-b3-jnb"/>
+                        <outlet property="quotesCollectionView" destination="0Y0-cc-VGm" id="Xnm-Ie-VZp"/>
+                        <outlet property="saveButton" destination="GFr-8E-TMe" id="CuG-ir-N8l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Dg-wu-j4R" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -121,7 +133,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BlackOval" width="24" height="24"/>
+        <image name="Oval" width="24" height="24"/>
         <namedColor name="Black">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
