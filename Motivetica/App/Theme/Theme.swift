@@ -35,10 +35,20 @@ enum Theme: Int {
     }
   }
   
+  var statusBarStyle: UIStatusBarStyle {
+    switch self {
+    case .light:
+      return .default
+    case .dark:
+      return .lightContent
+    }
+  }
+  
   func apply() {
     UserDefaults.standard.set(rawValue, forKey: UserKeys.selectedTheme)
     UserDefaults.standard.synchronize()
     
     UIApplication.shared.delegate?.window??.tintColor = mainColor
+    UIApplication.shared.statusBarStyle = statusBarStyle
   }
 }
