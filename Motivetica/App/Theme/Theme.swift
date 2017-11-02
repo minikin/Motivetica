@@ -22,14 +22,14 @@ enum Theme: Int {
     case .light:
       return UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1)
     case .dark:
-      return UIColor(red: 0.13, green: 0.13, blue: 0.13, alpha: 1)
+      return UIColor(red: 0, green: 0, blue: 0, alpha: 1)
     }
   }
   
   var globalTintColor: UIColor {
     switch self {
     case .light:
-      return UIColor(red: 0.13, green: 0.13, blue: 0.13, alpha: 1)
+      return UIColor(red: 0, green: 0, blue: 0, alpha: 1)
     case .dark:
       return UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1)
     }
