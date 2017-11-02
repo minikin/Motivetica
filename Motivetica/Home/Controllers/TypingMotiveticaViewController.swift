@@ -11,21 +11,17 @@ import Lottie
 
 final class TypingMotiveticaViewController: UIViewController {
   
-  // MARK: - Properties
-  var coreDataStack: CoreDataStack!
-
   // MARK: - ViewController LifeCycle
   override func viewDidLoad() {
     super.viewDidLoad()
   }
-  
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(false)
     mottiveticaLodingAnimation()
   }
   
   // MARK: - Helpers
-  func mottiveticaLodingAnimation() {
+  private func mottiveticaLodingAnimation() {
     let animationView = LOTAnimationView(name: "Intro")
     animationView.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
     animationView.center = self.view.center
@@ -37,8 +33,8 @@ final class TypingMotiveticaViewController: UIViewController {
   }
 
   // MARK: - Navigation
-  func navigateToHomeVC() {
-    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(200)) {
+  private func navigateToHomeVC() {
+    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100)) {
       self.performSegue(withIdentifier: "toHomeFormStart", sender: self)
     }
   }

@@ -36,7 +36,7 @@
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0Y0-cc-VGm" userLabel="Quotes Collection View">
                                 <rect key="frame" x="32" y="238" width="311" height="350"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="0.98412984609999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qA1-8A-hfm">
                                     <size key="itemSize" width="289" height="339"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>

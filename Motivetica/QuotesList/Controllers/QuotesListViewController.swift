@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QuotesListViewController: UIViewController {
+final class QuotesListViewController: UIViewController {
   
   // MARK: - IBOutlets
   @IBOutlet weak var currentTimeLabel: UILabel!
@@ -30,6 +30,7 @@ class QuotesListViewController: UIViewController {
     setCurrentTime()
     setCurrentDayOfTheWeek()
   }
+  
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     applyThemeToViewController()
@@ -38,6 +39,7 @@ class QuotesListViewController: UIViewController {
       self?.setCurrentDayOfTheWeek()
     })
   }
+  
   override func viewDidDisappear(_ animated: Bool) {
     super.viewDidDisappear(animated)
     timer?.invalidate()
@@ -45,10 +47,11 @@ class QuotesListViewController: UIViewController {
   }
   
   // MARK: - Actions
-  
   @IBAction func saveQuoteToPhotos(_ sender: UIButton) {
-    
+    let imageToSave = #imageLiteral(resourceName: "Oval")
+    UIImageWriteToSavedPhotosAlbum(imageToSave, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
   }
+  
   @IBAction func chnageAppTheme(_ sender: UIButton) {
     if Theme.current.rawValue == 0 {
       Theme.dark.apply()
@@ -58,20 +61,36 @@ class QuotesListViewController: UIViewController {
       applyThemeToViewController()
     }
   }
-  
+
   // MARK: - Helpers
-  func setCurrentTime() {
+  @objc private func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+    if let error = error {
+      let ac = UIAlertController(title: "Save error",
+                                 message: error.localizedDescription,
+                                 preferredStyle: .alert)
+      ac.addAction(UIAlertAction(title: "OK", style: .default))
+      present(ac, animated: true)
+    } else {
+      let ac = UIAlertController(title: "Saved!",
+                                 message: "Your altered image has been saved to your photos.",
+                                 preferredStyle: .alert)
+      ac.addAction(UIAlertAction(title: "OK", style: .default))
+      present(ac, animated: true)
+    }
+  }
+  
+  private func setCurrentTime() {
     let hour = calendar.component(.hour, from: Date())
     let minutes = calendar.component(.minute, from: Date())
     currentTimeLabel.text = String(format: "%0d:%02d", arguments: [hour, minutes])
   }
   
-  func setCurrentDayOfTheWeek() {
+  private func setCurrentDayOfTheWeek() {
     dateFormatter.dateFormat = "EEEE, MMMM d"
     currentDayLabel.text  =  dateFormatter.string(from: Date())
   }
   
-  func applyThemeToViewController() {
+  private func applyThemeToViewController() {
     backgroundView.backgroundColor = Theme.current.mainColor
     quotesCollectionView.backgroundColor = Theme.current.mainColor
     changeThemeButton.imageView?.tintColor = Theme.current.globalTintColor

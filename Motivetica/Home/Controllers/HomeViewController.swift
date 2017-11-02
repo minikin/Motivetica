@@ -37,8 +37,7 @@ final class HomeViewController: UIViewController {
   @IBAction func unwindFromListOfQuotes(_ sender: UIStoryboardSegue) {}
   
   // MARK: - Helpers
-  
-  func applyThemeToViewController() {
+  private func applyThemeToViewController() {
     backgroundView.backgroundColor = Theme.current.mainColor
     motiveticaLogo.tintColor = Theme.current.globalTintColor
     manaLabel.textColor = Theme.current.globalTintColor
