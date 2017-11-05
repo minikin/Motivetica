@@ -10,6 +10,9 @@ import UIKit
 
 final class QuotesCell: UICollectionViewCell {
 
+  // MARK: - Outlets
+  
+  // MARK: - View Lifecycle
   override func prepareForReuse() {
     
   }

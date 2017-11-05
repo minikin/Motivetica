@@ -12,6 +12,8 @@
 		4C07186AF50C8E356BA08FF9 /* Pods_MotiveticaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F2CCCAF1862F5981A2E6B9 /* Pods_MotiveticaUITests.framework */; };
 		B79A0DC5488019B337924647 /* Pods_Motivetica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2CED4EF8FACD223C76434A /* Pods_Motivetica.framework */; };
 		CE03DF931FA893A900EFFB40 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03DF921FA893A900EFFB40 /* GlobalFunctions.swift */; };
+		CE0B13FB1FAF657C0087E065 /* MotiveticaAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B13F91FAF657C0087E065 /* MotiveticaAlertViewController.swift */; };
+		CE0B13FC1FAF657C0087E065 /* MotiveticaAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0B13FA1FAF657C0087E065 /* MotiveticaAlertViewController.xib */; };
 		CE1EA7A81FA6251E005C93C9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1EA7A71FA6251E005C93C9 /* APIClient.swift */; };
 		CE1EA7AC1FA6260A005C93C9 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1EA7AB1FA6260A005C93C9 /* APIRouter.swift */; };
 		CE1EA7AF1FA62C22005C93C9 /* NSManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1EA7AE1FA62C22005C93C9 /* NSManagedObject.swift */; };
@@ -84,6 +86,8 @@
 		ACA794AB07711264AE71B1A0 /* Pods-Motivetica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivetica.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motivetica/Pods-Motivetica.release.xcconfig"; sourceTree = "<group>"; };
 		C2F2CCCAF1862F5981A2E6B9 /* Pods_MotiveticaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MotiveticaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE03DF921FA893A900EFFB40 /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		CE0B13F91FAF657C0087E065 /* MotiveticaAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotiveticaAlertViewController.swift; sourceTree = "<group>"; };
+		CE0B13FA1FAF657C0087E065 /* MotiveticaAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MotiveticaAlertViewController.xib; sourceTree = "<group>"; };
 		CE1EA7A71FA6251E005C93C9 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		CE1EA7AB1FA6260A005C93C9 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		CE1EA7AE1FA62C22005C93C9 /* NSManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObject.swift; sourceTree = "<group>"; };
@@ -194,7 +198,6 @@
 				033EF1DC1F82EC80003808AF /* Resources */,
 				033EF1D71F82EBE9003808AF /* Supporting Files */,
 				CE7CE2211FA9F26F00E05AF3 /* Theme */,
-				CECCFD051FABDD68009CEFA3 /* Views */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -464,15 +467,10 @@
 		CECCFD041FABDD5B009CEFA3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE0B13F91FAF657C0087E065 /* MotiveticaAlertViewController.swift */,
+				CE0B13FA1FAF657C0087E065 /* MotiveticaAlertViewController.xib */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		CECCFD051FABDD68009CEFA3 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		CECCFD061FABDDAC009CEFA3 /* Layouts */ = {
@@ -681,6 +679,7 @@
 				CECCFCF91FABBF73009CEFA3 /* img_0.png in Resources */,
 				CECCFCFE1FABBF73009CEFA3 /* img_4.png in Resources */,
 				CECCFD011FABBF73009CEFA3 /* img_7.png in Resources */,
+				CE0B13FC1FAF657C0087E065 /* MotiveticaAlertViewController.xib in Resources */,
 				CECCFD001FABBF73009CEFA3 /* img_6.png in Resources */,
 				CECCFCFB1FABBF73009CEFA3 /* img_10.png in Resources */,
 			);
@@ -886,6 +885,7 @@
 				CE6E6C6B1FA620B4002FF3DB /* Quote+CoreDataClass.swift in Sources */,
 				CE2B78281F9D316A00E45E16 /* FilesHelper.swift in Sources */,
 				CE6E6C561FA5F57F002FF3DB /* CoreDataStack.swift in Sources */,
+				CE0B13FB1FAF657C0087E065 /* MotiveticaAlertViewController.swift in Sources */,
 				CE6E6C6E1FA620B4002FF3DB /* Author+CoreDataProperties.swift in Sources */,
 				CEF126951F9D15350007F7BA /* UserQuoteViewController.swift in Sources */,
 				033EF1B71F82E49A003808AF /* Motivetica.xcdatamodeld in Sources */,

@@ -10,7 +10,6 @@ import UIKit
 
 class UserQuoteViewController: UIViewController {
   
-  
   // MARK: - IBOutlets
   
   // MARK: - Properties

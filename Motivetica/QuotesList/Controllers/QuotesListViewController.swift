@@ -10,7 +10,7 @@ import UIKit
 
 final class QuotesListViewController: UIViewController {
   
-  // MARK: - IBOutlets
+  // MARK: - Outlets
   @IBOutlet weak var currentTimeLabel: UILabel!
   @IBOutlet weak var currentDayLabel: UILabel!
   @IBOutlet var backgroundView: UIView!
@@ -49,11 +49,9 @@ final class QuotesListViewController: UIViewController {
   
   // MARK: - Actions
   @IBAction func saveQuoteToPhotos(_ sender: UIButton) {
-  
     guard  let imageToSave = captureScreen() else {
       return
     }
-
     UIImageWriteToSavedPhotosAlbum(imageToSave, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
   }
   
@@ -92,18 +90,18 @@ final class QuotesListViewController: UIViewController {
 
   // MARK: - Helpers
   @objc private func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
-    if let error = error {
-      let ac = UIAlertController(title: "Save error",
-                                 message: error.localizedDescription,
-                                 preferredStyle: .alert)
-      ac.addAction(UIAlertAction(title: "OK", style: .default))
-      present(ac, animated: true)
+    if error != nil {
+      let alert = MotiveticaAlertViewController(title: "OOPS",
+                                                message: "SOMETHING WENT WRONG",
+                                                backgroundColor: Theme.current.mainColor,
+                                                textColor: Theme.current.globalTintColor)
+      present(alert, animated: true)
     } else {
-      let ac = UIAlertController(title: "Saved!",
-                                 message: "Your altered image has been saved to your photos.",
-                                 preferredStyle: .alert)
-      ac.addAction(UIAlertAction(title: "OK", style: .default))
-      present(ac, animated: true)
+      let alert = MotiveticaAlertViewController(title: "SUCCESS",
+                                                message: "IMAGE SAVED TO CAMERA",
+                                                backgroundColor: Theme.current.mainColor,
+                                                textColor: Theme.current.globalTintColor)
+      present(alert, animated: true)
     }
   }
   
