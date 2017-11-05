@@ -167,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				CE2B78351F9D3F4800E45E16 /* Controllers */,
+				CECCFD061FABDDAC009CEFA3 /* Layouts */,
+				CECCFD071FABDDB4009CEFA3 /* ViewModels */,
 				CE2B78341F9D3F4000E45E16 /* Views */,
 			);
 			path = QuotesList;
@@ -186,11 +188,13 @@
 				CE1EA7A61FA62507005C93C9 /* API */,
 				033EF1DB1F82EC6F003808AF /* AppDelegate */,
 				CE2B78261F9D315100E45E16 /* Common */,
+				CECCFD041FABDD5B009CEFA3 /* Controllers */,
 				CE6E6C5D1FA60090002FF3DB /* CoreData */,
 				CE6E6C601FA608D0002FF3DB /* Models */,
 				033EF1DC1F82EC80003808AF /* Resources */,
 				033EF1D71F82EBE9003808AF /* Supporting Files */,
 				CE7CE2211FA9F26F00E05AF3 /* Theme */,
+				CECCFD051FABDD68009CEFA3 /* Views */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -455,6 +459,34 @@
 				CECCFCF71FABBF73009CEFA3 /* img_9.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		CECCFD041FABDD5B009CEFA3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CECCFD051FABDD68009CEFA3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CECCFD061FABDDAC009CEFA3 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		CECCFD071FABDDB4009CEFA3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		CEF126911F9D14FA0007F7BA /* UserQuote */ = {

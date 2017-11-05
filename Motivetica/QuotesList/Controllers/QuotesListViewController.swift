@@ -18,6 +18,7 @@ final class QuotesListViewController: UIViewController {
   @IBOutlet weak var backButton: UIButton!
   @IBOutlet weak var saveButton: UIButton!
   @IBOutlet weak var changeThemeButton: UIButton!
+  @IBOutlet weak var tempView: UIView!
   
   // MARK: - Properties
   private let calendar = Calendar.current
@@ -48,8 +49,35 @@ final class QuotesListViewController: UIViewController {
   
   // MARK: - Actions
   @IBAction func saveQuoteToPhotos(_ sender: UIButton) {
-    let imageToSave = #imageLiteral(resourceName: "Oval")
+  
+    guard  let imageToSave = captureScreen() else {
+      return
+    }
+
     UIImageWriteToSavedPhotosAlbum(imageToSave, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+  }
+  
+ private func combineViews() -> UIView? {
+   let viewTosave = backgroundView
+    viewTosave?.addSubview(tempView)
+    return viewTosave
+  }
+ 
+  private func captureScreen() -> UIImage? {
+    guard let viewToSave = combineViews() else {
+      return nil
+    }
+    
+    UIGraphicsBeginImageContextWithOptions(viewToSave.layer.frame.size, false, 0.0)
+    if let context = UIGraphicsGetCurrentContext() {
+      viewToSave.layer.render(in: context)
+      
+      let image = UIGraphicsGetImageFromCurrentImageContext()
+      UIGraphicsEndImageContext()
+      return image
+    } else {
+      return nil
+    }
   }
   
   @IBAction func chnageAppTheme(_ sender: UIButton) {
@@ -94,7 +122,6 @@ final class QuotesListViewController: UIViewController {
     backgroundView.backgroundColor = Theme.current.mainColor
     quotesCollectionView.backgroundColor = Theme.current.mainColor
     changeThemeButton.imageView?.tintColor = Theme.current.globalTintColor
-    
     backButton.setTitleColor(Theme.current.globalTintColor, for: .normal)
     saveButton.setTitleColor(Theme.current.globalTintColor, for: .normal)
   }
