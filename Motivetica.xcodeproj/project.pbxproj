@@ -56,6 +56,7 @@
 		CEF043FC1F9FE21B00D1190F /* QuotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF043FB1F9FE21B00D1190F /* QuotesCell.swift */; };
 		CEF126951F9D15350007F7BA /* UserQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF126941F9D15350007F7BA /* UserQuoteViewController.swift */; };
 		CEF1269F1F9D1B210007F7BA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1269E1F9D1B210007F7BA /* HomeViewController.swift */; };
+		CEF47C7B1FB26FCA00FB61FE /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF47C7A1FB26FCA00FB61FE /* Clock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,7 @@
 		CEF043FB1F9FE21B00D1190F /* QuotesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesCell.swift; sourceTree = "<group>"; };
 		CEF126941F9D15350007F7BA /* UserQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserQuoteViewController.swift; sourceTree = "<group>"; };
 		CEF1269E1F9D1B210007F7BA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CEF47C7A1FB26FCA00FB61FE /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
 		E226DDC407D719F155D2FB69 /* Pods-MotiveticaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotiveticaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MotiveticaTests/Pods-MotiveticaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,6 +172,7 @@
 		033EF1D01F82EA00003808AF /* QuotesList */ = {
 			isa = PBXGroup;
 			children = (
+				CEF47C791FB26FB400FB61FE /* New Group */,
 				CE2B78351F9D3F4800E45E16 /* Controllers */,
 				CECCFD061FABDDAC009CEFA3 /* Layouts */,
 				CECCFD071FABDDB4009CEFA3 /* ViewModels */,
@@ -383,6 +386,7 @@
 				CE6E6C671FA620B4002FF3DB /* Quote+CoreDataClass.swift */,
 				CE6E6C681FA620B4002FF3DB /* Quote+CoreDataProperties.swift */,
 				CE6E6C611FA608DA002FF3DB /* CellDescriptor.swift */,
+				CEF47C7A1FB26FCA00FB61FE /* Clock.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -528,6 +532,13 @@
 				CE2B782B1F9D372800E45E16 /* TypingMotiveticaViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CEF47C791FB26FB400FB61FE /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -898,6 +909,7 @@
 				CE1EA7AF1FA62C22005C93C9 /* NSManagedObject.swift in Sources */,
 				CEF043FC1F9FE21B00D1190F /* QuotesCell.swift in Sources */,
 				CE1EA7A81FA6251E005C93C9 /* APIClient.swift in Sources */,
+				CEF47C7B1FB26FCA00FB61FE /* Clock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

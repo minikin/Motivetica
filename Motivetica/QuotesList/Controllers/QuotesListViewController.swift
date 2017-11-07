@@ -20,15 +20,14 @@ final class QuotesListViewController: UIViewController {
   @IBOutlet weak var changeThemeButton: UIButton!
   @IBOutlet weak var tempView: UIView!
   // MARK: - Properties
-  private let calendar = Calendar.current
-  private let dateFormatter = DateFormatter()
   private var timer: Timer?
+  private let clock = Clock()
   
   // MARK: - ViewController LifeCycle
   override func viewDidLoad() {
     super.viewDidLoad()
-    setCurrentTime()
-    setCurrentDayOfTheWeek()
+    currentDayLabel.text = clock.currentDayOfTheWeek
+    currentTimeLabel.text = clock.currentTime
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -37,8 +36,9 @@ final class QuotesListViewController: UIViewController {
     timer =  Timer.scheduledTimer(withTimeInterval: 1.0,
                                   repeats: true,
                                   block: { [weak self] _ in
-      self?.setCurrentTime()
-      self?.setCurrentDayOfTheWeek()
+
+        self?.currentDayLabel.text = self?.clock.currentDayOfTheWeek
+        self?.currentTimeLabel.text = self?.clock.currentTime
     })
   }
   
@@ -112,18 +112,7 @@ final class QuotesListViewController: UIViewController {
       present(alert, animated: true)
     }
   }
-  
-  private func setCurrentTime() {
-    let hour = calendar.component(.hour, from: Date())
-    let minutes = calendar.component(.minute, from: Date())
-    currentTimeLabel.text = String(format: "%0d:%02d", arguments: [hour, minutes])
-  }
-  
-  private func setCurrentDayOfTheWeek() {
-    dateFormatter.dateFormat = "EEEE, MMMM d"
-    currentDayLabel.text  =  dateFormatter.string(from: Date())
-  }
-  
+
   private func applyThemeToViewController() {
     backgroundView.backgroundColor = Theme.current.mainColor
     quotesCollectionView.backgroundColor = Theme.current.mainColor
