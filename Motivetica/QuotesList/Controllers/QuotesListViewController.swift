@@ -13,13 +13,12 @@ final class QuotesListViewController: UIViewController {
   // MARK: - Outlets
   @IBOutlet weak var currentTimeLabel: UILabel!
   @IBOutlet weak var currentDayLabel: UILabel!
-  @IBOutlet var backgroundView: UIView!
+  @IBOutlet weak var backgroundView: UIView!
   @IBOutlet weak var quotesCollectionView: UICollectionView!
   @IBOutlet weak var backButton: UIButton!
   @IBOutlet weak var saveButton: UIButton!
   @IBOutlet weak var changeThemeButton: UIButton!
   @IBOutlet weak var tempView: UIView!
-  
   // MARK: - Properties
   private let calendar = Calendar.current
   private let dateFormatter = DateFormatter()
@@ -35,7 +34,9 @@ final class QuotesListViewController: UIViewController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     applyThemeToViewController()
-    timer =  Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { [weak self] _ in
+    timer =  Timer.scheduledTimer(withTimeInterval: 1.0,
+                                  repeats: true,
+                                  block: { [weak self] _ in
       self?.setCurrentTime()
       self?.setCurrentDayOfTheWeek()
     })
@@ -49,33 +50,14 @@ final class QuotesListViewController: UIViewController {
   
   // MARK: - Actions
   @IBAction func saveQuoteToPhotos(_ sender: UIButton) {
-    guard  let imageToSave = captureScreen() else {
+    guard let combinedView = combineViews(),
+      let imageToSave = imageWithView(inView: combinedView) else {
       return
     }
-    UIImageWriteToSavedPhotosAlbum(imageToSave, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
-  }
-  
- private func combineViews() -> UIView? {
-   let viewTosave = backgroundView
-    viewTosave?.addSubview(tempView)
-    return viewTosave
-  }
- 
-  private func captureScreen() -> UIImage? {
-    guard let viewToSave = combineViews() else {
-      return nil
-    }
-    
-    UIGraphicsBeginImageContextWithOptions(viewToSave.layer.frame.size, false, 0.0)
-    if let context = UIGraphicsGetCurrentContext() {
-      viewToSave.layer.render(in: context)
-      
-      let image = UIGraphicsGetImageFromCurrentImageContext()
-      UIGraphicsEndImageContext()
-      return image
-    } else {
-      return nil
-    }
+    UIImageWriteToSavedPhotosAlbum(imageToSave,
+                                   self,
+                                   #selector(didSaveQuoteAsImageToPhotos(_:error:contextInfo:)),
+                                   nil)
   }
   
   @IBAction func chnageAppTheme(_ sender: UIButton) {
@@ -89,7 +71,33 @@ final class QuotesListViewController: UIViewController {
   }
 
   // MARK: - Helpers
-  @objc private func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+  private func combineViews() -> UIView? {
+    guard let mainView = backgroundView,
+      let childView = tempView else {
+        return nil
+    }
+    mainView.addSubview(childView)
+    return mainView
+  }
+  
+  private func getCurrentContext() -> CGContext {
+    guard let context = UIGraphicsGetCurrentContext() else {
+      fatalError("Can't get context")
+    }
+    return context
+  }
+  
+  private func imageWithView(inView: UIView) -> UIImage? {
+    UIGraphicsBeginImageContextWithOptions(inView.bounds.size, inView.isOpaque, 0.0)
+    inView.layer.render(in: getCurrentContext())
+    let image = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
+    return image
+  }
+  
+  @objc private func didSaveQuoteAsImageToPhotos(_ image: UIImage,
+                                                 error: NSError?,
+                                                 contextInfo: UnsafeRawPointer) {
     if error != nil {
       let alert = MotiveticaAlertViewController(title: "OOPS",
                                                 message: "SOMETHING WENT WRONG",
@@ -98,7 +106,7 @@ final class QuotesListViewController: UIViewController {
       present(alert, animated: true)
     } else {
       let alert = MotiveticaAlertViewController(title: "SUCCESS",
-                                                message: "IMAGE SAVED TO CAMERA",
+                                                message: "IMAGE SAVED TO PHOTOS",
                                                 backgroundColor: Theme.current.mainColor,
                                                 textColor: Theme.current.globalTintColor)
       present(alert, animated: true)

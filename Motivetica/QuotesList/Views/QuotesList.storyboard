@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vol-9B-Svv">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,23 +19,26 @@
             <objects>
                 <viewController id="vol-9B-Svv" customClass="QuotesListViewController" customModule="Motivetica" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fTg-hK-DRT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TKR-4N-BNb" userLabel="Background View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23:59" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epc-EM-1yn" userLabel="Time">
-                                <rect key="frame" x="87" y="60" width="201" height="96"/>
+                                <rect key="frame" x="87" y="84" width="201" height="96"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="80"/>
                                 <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friday, September 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDu-9f-nJW" userLabel="Day of Week">
-                                <rect key="frame" x="83" y="164" width="208" height="29"/>
+                                <rect key="frame" x="83" y="188" width="208" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0Y0-cc-VGm" userLabel="Quotes Collection View">
-                                <rect key="frame" x="32" y="238" width="311" height="350"/>
+                                <rect key="frame" x="32" y="262" width="311" height="437"/>
                                 <color key="backgroundColor" red="1" green="0.98412984609999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qA1-8A-hfm">
                                     <size key="itemSize" width="289" height="339"/>
@@ -55,7 +58,7 @@
                                 </cells>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cti-Jq-s3g" userLabel="FooterView">
-                                <rect key="frame" x="32" y="612" width="311" height="24"/>
+                                <rect key="frame" x="32" y="723" width="311" height="24"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrE-PO-Gih">
                                         <rect key="frame" x="0.0" y="0.0" width="43" height="24"/>
@@ -94,15 +97,16 @@
                                     <constraint firstAttribute="trailing" secondItem="GFr-8E-TMe" secondAttribute="trailing" id="xhR-M4-zKT"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60e-fU-iV0" userLabel="TempView">
-                                <rect key="frame" x="32" y="238" width="311" height="350"/>
-                                <color key="backgroundColor" red="0.99607843139999996" green="0.70196078429999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60e-fU-iV0" userLabel="TempView">
+                                <rect key="frame" x="32" y="262" width="311" height="437"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0Y0-cc-VGm" firstAttribute="leading" secondItem="pKh-rb-UVE" secondAttribute="leading" constant="32" id="2cn-OJ-Dbz"/>
                             <constraint firstItem="60e-fU-iV0" firstAttribute="top" secondItem="XDu-9f-nJW" secondAttribute="bottom" constant="45" id="3br-k8-mYv"/>
+                            <constraint firstItem="TKR-4N-BNb" firstAttribute="top" secondItem="fTg-hK-DRT" secondAttribute="top" id="3xV-Mw-hBf"/>
                             <constraint firstItem="epc-EM-1yn" firstAttribute="top" secondItem="pKh-rb-UVE" secondAttribute="top" constant="40" id="BgA-0A-w95"/>
                             <constraint firstItem="XDu-9f-nJW" firstAttribute="centerX" secondItem="fTg-hK-DRT" secondAttribute="centerX" id="BkG-Ay-sL7"/>
                             <constraint firstItem="pKh-rb-UVE" firstAttribute="trailing" secondItem="0Y0-cc-VGm" secondAttribute="trailing" constant="32" id="M53-TF-9FC"/>
@@ -110,18 +114,21 @@
                             <constraint firstItem="pKh-rb-UVE" firstAttribute="trailing" secondItem="60e-fU-iV0" secondAttribute="trailing" constant="32" id="UfX-0R-Abi"/>
                             <constraint firstItem="cti-Jq-s3g" firstAttribute="top" secondItem="0Y0-cc-VGm" secondAttribute="bottom" constant="24" id="Z03-Ef-Z00"/>
                             <constraint firstItem="epc-EM-1yn" firstAttribute="centerX" secondItem="fTg-hK-DRT" secondAttribute="centerX" id="ZN0-bf-WmJ"/>
+                            <constraint firstItem="TKR-4N-BNb" firstAttribute="trailing" secondItem="pKh-rb-UVE" secondAttribute="trailing" id="bY4-TQ-2LG"/>
                             <constraint firstItem="60e-fU-iV0" firstAttribute="leading" secondItem="pKh-rb-UVE" secondAttribute="leading" constant="32" id="dS7-EZ-kwb"/>
                             <constraint firstItem="pKh-rb-UVE" firstAttribute="bottom" secondItem="cti-Jq-s3g" secondAttribute="bottom" constant="31" id="eVM-5X-UB9"/>
                             <constraint firstItem="XDu-9f-nJW" firstAttribute="top" secondItem="epc-EM-1yn" secondAttribute="bottom" constant="8" id="fQT-ZZ-q8a"/>
+                            <constraint firstItem="TKR-4N-BNb" firstAttribute="leading" secondItem="pKh-rb-UVE" secondAttribute="leading" id="tA0-NF-Gtq"/>
                             <constraint firstItem="0Y0-cc-VGm" firstAttribute="top" secondItem="XDu-9f-nJW" secondAttribute="bottom" constant="45" id="tZI-vw-408"/>
                             <constraint firstItem="cti-Jq-s3g" firstAttribute="top" secondItem="60e-fU-iV0" secondAttribute="bottom" constant="24" id="uLS-he-fsv"/>
                             <constraint firstItem="cti-Jq-s3g" firstAttribute="leading" secondItem="pKh-rb-UVE" secondAttribute="leading" constant="32" id="yG4-CD-C9N"/>
+                            <constraint firstAttribute="bottom" secondItem="TKR-4N-BNb" secondAttribute="bottom" id="yYw-XI-UsX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pKh-rb-UVE"/>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="JrE-PO-Gih" id="B2B-9G-Cmx"/>
-                        <outlet property="backgroundView" destination="fTg-hK-DRT" id="sLx-zi-aln"/>
+                        <outlet property="backgroundView" destination="TKR-4N-BNb" id="NyL-vj-K9V"/>
                         <outlet property="changeThemeButton" destination="LA6-wI-D3j" id="U9v-cp-zrf"/>
                         <outlet property="currentDayLabel" destination="XDu-9f-nJW" id="vaK-86-ZMY"/>
                         <outlet property="currentTimeLabel" destination="epc-EM-1yn" id="DhN-b3-jnb"/>
@@ -133,7 +140,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Dg-wu-j4R" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="cON-hW-ncO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="436" y="26.53673163418291"/>
+            <point key="canvasLocation" x="436" y="25.862068965517242"/>
         </scene>
     </scenes>
     <resources>
