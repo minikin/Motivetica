@@ -53,6 +53,7 @@
 		CECCFD011FABBF73009CEFA3 /* img_7.png in Resources */ = {isa = PBXBuildFile; fileRef = CECCFCF51FABBF73009CEFA3 /* img_7.png */; };
 		CECCFD021FABBF73009CEFA3 /* img_8.png in Resources */ = {isa = PBXBuildFile; fileRef = CECCFCF61FABBF73009CEFA3 /* img_8.png */; };
 		CECCFD031FABBF73009CEFA3 /* img_9.png in Resources */ = {isa = PBXBuildFile; fileRef = CECCFCF71FABBF73009CEFA3 /* img_9.png */; };
+		CED01B531FB760FB00825EDF /* QuotesListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED01B521FB760FB00825EDF /* QuotesListLayout.swift */; };
 		CEF043FC1F9FE21B00D1190F /* QuotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF043FB1F9FE21B00D1190F /* QuotesCell.swift */; };
 		CEF126951F9D15350007F7BA /* UserQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF126941F9D15350007F7BA /* UserQuoteViewController.swift */; };
 		CEF1269F1F9D1B210007F7BA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1269E1F9D1B210007F7BA /* HomeViewController.swift */; };
@@ -134,6 +135,7 @@
 		CECCFCF51FABBF73009CEFA3 /* img_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_7.png; sourceTree = "<group>"; };
 		CECCFCF61FABBF73009CEFA3 /* img_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_8.png; sourceTree = "<group>"; };
 		CECCFCF71FABBF73009CEFA3 /* img_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_9.png; sourceTree = "<group>"; };
+		CED01B521FB760FB00825EDF /* QuotesListLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesListLayout.swift; sourceTree = "<group>"; };
 		CEF043FB1F9FE21B00D1190F /* QuotesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesCell.swift; sourceTree = "<group>"; };
 		CEF126941F9D15350007F7BA /* UserQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserQuoteViewController.swift; sourceTree = "<group>"; };
 		CEF1269E1F9D1B210007F7BA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -329,6 +331,7 @@
 			children = (
 				CE2B78361F9D3F6800E45E16 /* QuotesList.storyboard */,
 				CEF043FB1F9FE21B00D1190F /* QuotesCell.swift */,
+				CED01B521FB760FB00825EDF /* QuotesListLayout.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -899,6 +902,7 @@
 				CE0B13FB1FAF657C0087E065 /* MotiveticaAlertViewController.swift in Sources */,
 				CE6E6C6E1FA620B4002FF3DB /* Author+CoreDataProperties.swift in Sources */,
 				CEF126951F9D15350007F7BA /* UserQuoteViewController.swift in Sources */,
+				CED01B531FB760FB00825EDF /* QuotesListLayout.swift in Sources */,
 				033EF1B71F82E49A003808AF /* Motivetica.xcdatamodeld in Sources */,
 				CE2B78391F9D3F8000E45E16 /* QuotesListViewController.swift in Sources */,
 				CE1EA7B11FA62C3F005C93C9 /* NSManagedObjectContext.swift in Sources */,
