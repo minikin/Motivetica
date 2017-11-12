@@ -11,50 +11,49 @@ import Alamofire
 enum  MotiveticaAPIRouter: URLRequestConvertible {
   
   // MARK: - Base URL
-  static let baseURL = "https://motivetica.com/parse/"
+  static let baseURLString = "https://motivetica.com/parse/"
   
-  case readAuthor(withId: String)
-  case readlAllAuthors
-  case readQuote(withId: String)
-  case readAllQuotes
-  case readNewQuotes
+  case readAllQuotes(parameters: Parameters)
+  case readNewQuotes(date: String, parameters: Parameters)
   
   var path: String {
     switch self {
-    case .readAuthor(let id):
-      return "/classes/Author\(id)"
-    case .readlAllAuthors:
-      return "/classes/Author"
-    case .readQuote(let id):
-      return "/classes/Quote\(id)"
-    case .readAllQuotes:
-      return "/classes/Quote"
-    case .readNewQuotes:
-      return "/classes/Quote"
+    case .readAllQuotes, .readNewQuotes:
+      return "classes/Quote"
     }
   }
   
   var method: HTTPMethod {
     switch self {
-    case .readAuthor, .readlAllAuthors, .readQuote, .readAllQuotes, .readNewQuotes:
+    case .readAllQuotes, .readNewQuotes:
       return .get
     }
   }
   
+  // MARK: - URLRequestConvertible
+  
   func asURLRequest() throws -> URLRequest {
-    let url = try MotiveticaAPIRouter.baseURL.asURL()
+    let url = try MotiveticaAPIRouter.baseURLString.asURL()
+    var query = Parameters()
     
-    var request = URLRequest(url: url.appendingPathComponent(self.path))
-    request.httpMethod = self.method.rawValue
-    request.timeoutInterval = TimeInterval(10 * 1000)
+    var urlRequest = URLRequest(url: url.appendingPathComponent(path))
+    urlRequest.httpMethod = method.rawValue
+    urlRequest.timeoutInterval = TimeInterval(10 * 1000)
     
     switch self {
-    case .readNewQuotes:
-      request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
-    default:
-      request.addValue("application/json", forHTTPHeaderField: "Accept")
+    case .readAllQuotes(let parameters):
+      urlRequest = try URLEncoding.default.encode(urlRequest, with: parameters)
+    case .readNewQuotes(let date, let parameters):
+      parameters.forEach { query[$0] = $1 }
+      query["iso"] = date
+      urlRequest = try URLEncoding.default.encode(urlRequest, with: parameters)
     }
     
-    return request
+    switch self {
+    case .readNewQuotes, .readAllQuotes:
+      urlRequest.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+    }
+
+    return urlRequest
   }
 }

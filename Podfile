@@ -11,6 +11,7 @@ target 'Motivetica' do
   pod 'lottie-ios'
   pod 'Fabric'
   pod 'Crashlytics'
+  pod 'Alamofire'
   
   target 'MotiveticaTests' do
     inherit! :search_paths

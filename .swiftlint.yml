@@ -2,5 +2,6 @@ disabled_rules:
   - force_cast
   - identifier_name
   - trailing_whitespace
+  - force_try
 excluded:
   - Pods

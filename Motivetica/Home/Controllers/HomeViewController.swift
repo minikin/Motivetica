@@ -24,7 +24,10 @@ final class HomeViewController: UIViewController {
   // MARK: - ViewController LifeCycle
   override func viewDidLoad() {
     super.viewDidLoad()
-    apiClient.getAllQuotes()
+    
+    apiClient.getAllQuotes { quotes in
+      print(quotes)
+    }
   }
 
   override func viewWillAppear(_ animated: Bool) {

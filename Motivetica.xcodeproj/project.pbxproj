@@ -58,6 +58,7 @@
 		CED01B5C1FB8781000825EDF /* MotiveticaAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED01B5B1FB8781000825EDF /* MotiveticaAPIRouter.swift */; };
 		CED683841FB884DF00C88151 /* AuthorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED683831FB884DF00C88151 /* AuthorResponse.swift */; };
 		CED683861FB884EA00C88151 /* QuoteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED683851FB884EA00C88151 /* QuoteResponse.swift */; };
+		CEEF0DF41FB8FC6C008B3232 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF0DF31FB8FC6C008B3232 /* Result.swift */; };
 		CEF043FC1F9FE21B00D1190F /* QuotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF043FB1F9FE21B00D1190F /* QuotesCell.swift */; };
 		CEF126951F9D15350007F7BA /* UserQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF126941F9D15350007F7BA /* UserQuoteViewController.swift */; };
 		CEF1269F1F9D1B210007F7BA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1269E1F9D1B210007F7BA /* HomeViewController.swift */; };
@@ -144,6 +145,7 @@
 		CED01B5B1FB8781000825EDF /* MotiveticaAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotiveticaAPIRouter.swift; sourceTree = "<group>"; };
 		CED683831FB884DF00C88151 /* AuthorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorResponse.swift; sourceTree = "<group>"; };
 		CED683851FB884EA00C88151 /* QuoteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteResponse.swift; sourceTree = "<group>"; };
+		CEEF0DF31FB8FC6C008B3232 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		CEF043FB1F9FE21B00D1190F /* QuotesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesCell.swift; sourceTree = "<group>"; };
 		CEF126941F9D15350007F7BA /* UserQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserQuoteViewController.swift; sourceTree = "<group>"; };
 		CEF1269E1F9D1B210007F7BA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -505,6 +507,7 @@
 		CED01B561FB8772300825EDF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CEEF0DF31FB8FC6C008B3232 /* Result.swift */,
 				CE8453F81FB87C81009F6FA6 /* APIResult.swift */,
 				CED683831FB884DF00C88151 /* AuthorResponse.swift */,
 				CED01B571FB8773700825EDF /* PagedResponse.swift */,
@@ -923,6 +926,7 @@
 				CE8453F91FB87C81009F6FA6 /* APIResult.swift in Sources */,
 				CE6E6C621FA608DA002FF3DB /* CellDescriptor.swift in Sources */,
 				CE6E6C641FA60944002FF3DB /* ItemsDataSource.swift in Sources */,
+				CEEF0DF41FB8FC6C008B3232 /* Result.swift in Sources */,
 				CEB9938A1F73203C00083A2F /* AppDelegate.swift in Sources */,
 				CE1EA7AF1FA62C22005C93C9 /* NSManagedObject.swift in Sources */,
 				CED01B5C1FB8781000825EDF /* MotiveticaAPIRouter.swift in Sources */,
