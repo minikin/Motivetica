@@ -1,14 +1,14 @@
 //
-//  APIRouter.swift
+//  MotiveticaAPICRouter.swift
 //  Motivetica
 //
-//  Created by Sasha Prokhorenko on 10/29/17.
+//  Created by Sasha Prokhorenko on 11/12/17.
 //  Copyright © 2017 Sasha Prokhorenko. All rights reserved.
 //
 
 import Alamofire
 
-enum APIRouter: URLRequestConvertible {
+enum  MotiveticaAPIRouter: URLRequestConvertible {
   
   // MARK: - Base URL
   static let baseURL = "https://motivetica.com/parse/"
@@ -42,7 +42,7 @@ enum APIRouter: URLRequestConvertible {
   }
   
   func asURLRequest() throws -> URLRequest {
-    let url = try APIRouter.baseURL.asURL()
+    let url = try MotiveticaAPIRouter.baseURL.asURL()
     
     var request = URLRequest(url: url.appendingPathComponent(self.path))
     request.httpMethod = self.method.rawValue

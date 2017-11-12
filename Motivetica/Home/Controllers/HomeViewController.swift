@@ -19,12 +19,12 @@ final class HomeViewController: UIViewController {
   @IBOutlet weak var arrowLeft: UIImageView!
   
   // MARK: - Properties
-  let apiClient = APIClient()
+  let apiClient = MotiveticaAPIClient()
 
   // MARK: - ViewController LifeCycle
   override func viewDidLoad() {
     super.viewDidLoad()
-    //apiClient.getAllQuotes()
+    apiClient.getAllQuotes()
   }
 
   override func viewWillAppear(_ animated: Bool) {

@@ -1,8 +1,8 @@
 //
-//  APIClient.swift
+//  MotiveticaAPIClient.swift
 //  Motivetica
 //
-//  Created by Sasha Prokhorenko on 10/29/17.
+//  Created by Sasha Minikin on 11/12/17.
 //  Copyright © 2017 Sasha Prokhorenko. All rights reserved.
 //
 
@@ -11,18 +11,10 @@ import RxSwift
 import RxCocoa
 import RxAlamofire
 
-typealias JSONDictionary = [ String: Any]
-
-enum APIResult<T> {
-  case error(Error)
-  case success([T])
-  case unexpectedResponse
-}
-
-class APIClient {
+class MotiveticaAPIClient {
   
   // MARK: - Properties
-  static let sharedInstance = APIClient()
+  static let sharedInstance = MotiveticaAPIClient()
   
   private var session: URLSession {
     let config = URLSessionConfiguration.default
@@ -30,10 +22,10 @@ class APIClient {
     return URLSession(configuration: config)
   }
   
-  // MARK: - 
+  // MARK: -
   
   func getAllQuotes() {
-    guard let quotesRequest = APIRouter.readAllQuotes.urlRequest else {
+    guard let quotesRequest = MotiveticaAPIRouter.readAllQuotes.urlRequest else {
       return
     }
     _ = session.rx
@@ -43,7 +35,7 @@ class APIClient {
   }
   
   func getAllAuthors() {
-    guard let authorsRequest = APIRouter.readlAllAuthors.urlRequest else {
+    guard let authorsRequest = MotiveticaAPIRouter.readlAllAuthors.urlRequest else {
       return
     }
     _ = session.rx
