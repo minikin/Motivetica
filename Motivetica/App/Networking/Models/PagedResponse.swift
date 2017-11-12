@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct PagedResponse<T : Codable> : Codable {
+struct PagedResponse<T: Codable>: Codable {
   let currentPage: Int
   let numberOfPages: Int
   let totalResults: Int

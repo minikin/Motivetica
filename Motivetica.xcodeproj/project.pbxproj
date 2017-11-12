@@ -25,6 +25,7 @@
 		CE2B78371F9D3F6800E45E16 /* QuotesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2B78361F9D3F6800E45E16 /* QuotesList.storyboard */; };
 		CE2B78391F9D3F8000E45E16 /* QuotesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2B78381F9D3F8000E45E16 /* QuotesListViewController.swift */; };
 		CE2B783D1F9D409300E45E16 /* UserQuote.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2B783C1F9D409300E45E16 /* UserQuote.storyboard */; };
+		CE44620F1FB8B0FF0064A9AC /* HashFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44620E1FB8B0FF0064A9AC /* HashFunctions.swift */; };
 		CE4678001F7C334100DB9361 /* MotiveticaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4677FF1F7C334100DB9361 /* MotiveticaTests.swift */; };
 		CE46780E1F7C334E00DB9361 /* MotiveticaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46780D1F7C334E00DB9361 /* MotiveticaUITests.swift */; };
 		CE6E6C561FA5F57F002FF3DB /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6C551FA5F57F002FF3DB /* CoreDataStack.swift */; };
@@ -33,6 +34,8 @@
 		CE6E6C641FA60944002FF3DB /* ItemsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6C631FA60944002FF3DB /* ItemsDataSource.swift */; };
 		CE7CE2201FA9F12400E05AF3 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CE21F1FA9F12400E05AF3 /* Theme.swift */; };
 		CE8453F91FB87C81009F6FA6 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8453F81FB87C81009F6FA6 /* APIResult.swift */; };
+		CE94F1C41FB88B6C001F0196 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94F1C31FB88B6C001F0196 /* Author.swift */; };
+		CE94F1C61FB88BAA001F0196 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94F1C51FB88BAA001F0196 /* Quote.swift */; };
 		CEB9938A1F73203C00083A2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB993891F73203C00083A2F /* AppDelegate.swift */; };
 		CEB993911F73203C00083A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB993901F73203C00083A2F /* Assets.xcassets */; };
 		CEB993941F73203C00083A2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB993921F73203C00083A2F /* LaunchScreen.storyboard */; };
@@ -53,6 +56,8 @@
 		CED01B581FB8773700825EDF /* PagedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED01B571FB8773700825EDF /* PagedResponse.swift */; };
 		CED01B5A1FB877DD00825EDF /* MotiveticaAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED01B591FB877DD00825EDF /* MotiveticaAPIClient.swift */; };
 		CED01B5C1FB8781000825EDF /* MotiveticaAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED01B5B1FB8781000825EDF /* MotiveticaAPIRouter.swift */; };
+		CED683841FB884DF00C88151 /* AuthorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED683831FB884DF00C88151 /* AuthorResponse.swift */; };
+		CED683861FB884EA00C88151 /* QuoteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED683851FB884EA00C88151 /* QuoteResponse.swift */; };
 		CEF043FC1F9FE21B00D1190F /* QuotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF043FB1F9FE21B00D1190F /* QuotesCell.swift */; };
 		CEF126951F9D15350007F7BA /* UserQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF126941F9D15350007F7BA /* UserQuoteViewController.swift */; };
 		CEF1269F1F9D1B210007F7BA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1269E1F9D1B210007F7BA /* HomeViewController.swift */; };
@@ -100,6 +105,7 @@
 		CE2B78361F9D3F6800E45E16 /* QuotesList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuotesList.storyboard; sourceTree = "<group>"; };
 		CE2B78381F9D3F8000E45E16 /* QuotesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesListViewController.swift; sourceTree = "<group>"; };
 		CE2B783C1F9D409300E45E16 /* UserQuote.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserQuote.storyboard; sourceTree = "<group>"; };
+		CE44620E1FB8B0FF0064A9AC /* HashFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashFunctions.swift; sourceTree = "<group>"; };
 		CE4677FD1F7C334100DB9361 /* MotiveticaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotiveticaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4677FF1F7C334100DB9361 /* MotiveticaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotiveticaTests.swift; sourceTree = "<group>"; };
 		CE4678011F7C334100DB9361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -112,6 +118,8 @@
 		CE6E6C631FA60944002FF3DB /* ItemsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsDataSource.swift; sourceTree = "<group>"; };
 		CE7CE21F1FA9F12400E05AF3 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		CE8453F81FB87C81009F6FA6 /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		CE94F1C31FB88B6C001F0196 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		CE94F1C51FB88BAA001F0196 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		CEB993861F73203C00083A2F /* Motivetica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motivetica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB993891F73203C00083A2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB993901F73203C00083A2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -134,6 +142,8 @@
 		CED01B571FB8773700825EDF /* PagedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagedResponse.swift; sourceTree = "<group>"; };
 		CED01B591FB877DD00825EDF /* MotiveticaAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotiveticaAPIClient.swift; sourceTree = "<group>"; };
 		CED01B5B1FB8781000825EDF /* MotiveticaAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotiveticaAPIRouter.swift; sourceTree = "<group>"; };
+		CED683831FB884DF00C88151 /* AuthorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorResponse.swift; sourceTree = "<group>"; };
+		CED683851FB884EA00C88151 /* QuoteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteResponse.swift; sourceTree = "<group>"; };
 		CEF043FB1F9FE21B00D1190F /* QuotesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesCell.swift; sourceTree = "<group>"; };
 		CEF126941F9D15350007F7BA /* UserQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserQuoteViewController.swift; sourceTree = "<group>"; };
 		CEF1269E1F9D1B210007F7BA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -295,6 +305,7 @@
 				CE6E6C5A1FA5FE8C002FF3DB /* Environment.swift */,
 				CE6E6C631FA60944002FF3DB /* ItemsDataSource.swift */,
 				CE03DF921FA893A900EFFB40 /* GlobalFunctions.swift */,
+				CE44620E1FB8B0FF0064A9AC /* HashFunctions.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -381,9 +392,11 @@
 		CE6E6C601FA608D0002FF3DB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				033EF1B41F82E2F9003808AF /* Motivetica.xcdatamodeld */,
+				CE94F1C31FB88B6C001F0196 /* Author.swift */,
 				CE6E6C611FA608DA002FF3DB /* CellDescriptor.swift */,
 				CEF47C7A1FB26FCA00FB61FE /* Clock.swift */,
+				CE94F1C51FB88BAA001F0196 /* Quote.swift */,
+				033EF1B41F82E2F9003808AF /* Motivetica.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -493,7 +506,9 @@
 			isa = PBXGroup;
 			children = (
 				CE8453F81FB87C81009F6FA6 /* APIResult.swift */,
+				CED683831FB884DF00C88151 /* AuthorResponse.swift */,
 				CED01B571FB8773700825EDF /* PagedResponse.swift */,
+				CED683851FB884EA00C88151 /* QuoteResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -891,9 +906,12 @@
 				CE6E6C5B1FA5FE8C002FF3DB /* Environment.swift in Sources */,
 				CE2B78331F9D3E9100E45E16 /* AboutViewController.swift in Sources */,
 				CED01B581FB8773700825EDF /* PagedResponse.swift in Sources */,
+				CED683861FB884EA00C88151 /* QuoteResponse.swift in Sources */,
 				CE2B782C1F9D372800E45E16 /* TypingMotiveticaViewController.swift in Sources */,
 				CEF1269F1F9D1B210007F7BA /* HomeViewController.swift in Sources */,
 				CE2B78281F9D316A00E45E16 /* FilesHelper.swift in Sources */,
+				CE94F1C61FB88BAA001F0196 /* Quote.swift in Sources */,
+				CED683841FB884DF00C88151 /* AuthorResponse.swift in Sources */,
 				CED01B551FB761A100825EDF /* QuotesListViewModel.swift in Sources */,
 				CE6E6C561FA5F57F002FF3DB /* CoreDataStack.swift in Sources */,
 				CE0B13FB1FAF657C0087E065 /* MotiveticaAlertViewController.swift in Sources */,
@@ -909,7 +927,9 @@
 				CE1EA7AF1FA62C22005C93C9 /* NSManagedObject.swift in Sources */,
 				CED01B5C1FB8781000825EDF /* MotiveticaAPIRouter.swift in Sources */,
 				CEF043FC1F9FE21B00D1190F /* QuotesCell.swift in Sources */,
+				CE94F1C41FB88B6C001F0196 /* Author.swift in Sources */,
 				CEF47C7B1FB26FCA00FB61FE /* Clock.swift in Sources */,
+				CE44620F1FB8B0FF0064A9AC /* HashFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

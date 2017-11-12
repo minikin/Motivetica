@@ -16,6 +16,8 @@ final class CoreDataStack {
   
   private lazy var storeContainer: NSPersistentContainer = {
     let container = NSPersistentContainer(name: self.modelName)
+    container.viewContext.automaticallyMergesChangesFromParent = true
+    try? container.viewContext.setQueryGenerationFrom(.current)
     //self.seedCoreDataContainerIfFirstLaunch()
     container.loadPersistentStores { (_, error) in
       if let error = error as NSError? {

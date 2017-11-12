@@ -16,13 +16,13 @@ final class QuotesListLayout: UICollectionViewFlowLayout {
     if let cv = self.collectionView {
       
       let cvBounds = cv.bounds
-      let halfWidth = cvBounds.size.width * 0.5;
+      let halfWidth = cvBounds.size.width * 0.5
       
-      let proposedContentOffsetCenterX = proposedContentOffset.x + halfWidth;
+      let proposedContentOffsetCenterX = proposedContentOffset.x + halfWidth
       
       if let attributesForVisibleCells = self.layoutAttributesForElements(in: cvBounds) {
         
-        var candidateAttributes : UICollectionViewLayoutAttributes?
+        var candidateAttributes: UICollectionViewLayoutAttributes?
         for attributes in attributesForVisibleCells {
           
           // == Skip comparison with non-cell items (headers and footers) == //
@@ -44,12 +44,12 @@ final class QuotesListLayout: UICollectionViewFlowLayout {
           let b = candAttrs.center.x - proposedContentOffsetCenterX
           
           if fabsf(Float(a)) < fabsf(Float(b)) {
-            candidateAttributes = attributes;
+            candidateAttributes = attributes
           }
         }
         
         // Beautification step
-        if(proposedContentOffset.x == -(cv.contentInset.left)) {
+        if proposedContentOffset.x == -(cv.contentInset.left) {
           return proposedContentOffset
         }
         return CGPoint(x: floor(candidateAttributes!.center.x - halfWidth), y: proposedContentOffset.y)
