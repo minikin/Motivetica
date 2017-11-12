@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.5.1)
+  - AlamofireNetworkActivityIndicator (2.2.0):
+    - Alamofire (~> 4.5)
   - CodableAlamofire (1.1.0):
     - Alamofire (~> 4.0)
   - Crashlytics (3.9.3):
@@ -10,6 +12,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - AlamofireNetworkActivityIndicator
   - CodableAlamofire
   - Crashlytics
   - Fabric
@@ -18,12 +21,13 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  AlamofireNetworkActivityIndicator: 81e1630e7cfed22a4e4e82a174c59e651dc4f8ca
   CodableAlamofire: e2d2edcec7cf413f7862c30c8fa98eded27a83f9
   Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
   Fabric: 9cd6a848efcf1b8b07497e0b6a2e7d336353ba15
   lottie-ios: 94fa2d82547ce3adf1e61157653ba99999fd279f
   SwiftLint: a014c92b4664e8b13f380f8640a51bb1733778ba
 
-PODFILE CHECKSUM: 95730c9fa7b7088893c69703a9301e738eacb96b
+PODFILE CHECKSUM: 3dcafaa0906c0375c5fa843211ebbcd10acdfd8f
 
 COCOAPODS: 1.2.0

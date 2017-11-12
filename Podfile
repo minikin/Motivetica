@@ -13,6 +13,7 @@ target 'Motivetica' do
   pod 'Crashlytics'
   pod 'Alamofire'
   pod 'CodableAlamofire'
+  pod 'AlamofireNetworkActivityIndicator'
   
   target 'MotiveticaTests' do
     inherit! :search_paths
