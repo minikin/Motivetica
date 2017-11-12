@@ -6,14 +6,6 @@ PODS:
     - Fabric (~> 1.7.2)
   - Fabric (1.7.2)
   - lottie-ios (2.1.4)
-  - RxAlamofire (4.0.0):
-    - RxAlamofire/Core (= 4.0.0)
-  - RxAlamofire/Core (4.0.0):
-    - Alamofire (~> 4.5)
-    - RxSwift (~> 4.0)
-  - RxCocoa (4.0.0):
-    - RxSwift (~> 4.0)
-  - RxSwift (4.0.0)
   - SwiftLint (0.24.0)
 
 DEPENDENCIES:
@@ -22,9 +14,6 @@ DEPENDENCIES:
   - Crashlytics
   - Fabric
   - lottie-ios
-  - RxAlamofire
-  - RxCocoa (~> 4.0)
-  - RxSwift (~> 4.0)
   - SwiftLint
 
 SPEC CHECKSUMS:
@@ -33,11 +22,8 @@ SPEC CHECKSUMS:
   Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
   Fabric: 9cd6a848efcf1b8b07497e0b6a2e7d336353ba15
   lottie-ios: 94fa2d82547ce3adf1e61157653ba99999fd279f
-  RxAlamofire: 6ea579ac53bf14cb4bc7049a3866e5a769989b1d
-  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
-  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
   SwiftLint: a014c92b4664e8b13f380f8640a51bb1733778ba
 
-PODFILE CHECKSUM: baa46f01b5c708adc557e64c56e72b9d7c37f375
+PODFILE CHECKSUM: 95730c9fa7b7088893c69703a9301e738eacb96b
 
 COCOAPODS: 1.2.0

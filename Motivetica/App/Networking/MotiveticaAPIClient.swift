@@ -29,7 +29,7 @@ class MotiveticaAPIClient {
     sessionManager = Alamofire.SessionManager(configuration: configuration)
   }
   
-  // MARK: -
+  // MARK: - Get data from Server
   
   func getAllQuotes(_ completion: @escaping ([QuoteResponse]) -> Void) {
     
@@ -51,4 +51,27 @@ class MotiveticaAPIClient {
         completion(response.value!)
     }
   }
+  
+  func getNewQuotes(_ date: String, completion: @escaping ([QuoteResponse]) -> Void) {
+    
+    let parameters = [
+      "include": "author"
+    ]
+    
+    guard let newQuotesRequest = MotiveticaAPIRouter.readNewQuotes(date: date,
+                                                                   parameters: parameters).urlRequest else {
+      return
+    }
+    
+    let decoder = JSONDecoder()
+    decoder.dateDecodingStrategy = .iso8601
+    
+    sessionManager.request(newQuotesRequest)
+      .validate(statusCode: 200..<300)
+      .validate(contentType: ["application/json"])
+      .responseDecodableObject(keyPath: "results", decoder: decoder) { (response: DataResponse<[QuoteResponse]>) in
+        completion(response.value!)
+    }
+  }
+
 }
