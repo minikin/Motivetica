@@ -26,7 +26,10 @@ final class HomeViewController: UIViewController {
     super.viewDidLoad()
     
     apiClient.getAllQuotes { quotes in
-      print(quotes)
+      print("MotiveticaAPIClient: \n", quotes)
+      for quote in quotes {
+        print(quote.author.name)
+      }
     }
   }
 
@@ -38,6 +41,16 @@ final class HomeViewController: UIViewController {
   // MARK: - Actions
   @IBAction func unwindFromAbout(_ sender: UIStoryboardSegue) {}
   @IBAction func unwindFromListOfQuotes(_ sender: UIStoryboardSegue) {}
+  
+  // MARK: - Navigation
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    guard let identifier = segue.identifier else {
+      return
+    }
+    if identifier == "" {
+      
+    }
+  }
   
   // MARK: - Helpers
   private func applyThemeToViewController() {

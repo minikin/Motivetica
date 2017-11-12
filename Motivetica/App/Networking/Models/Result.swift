@@ -8,6 +8,8 @@
 
 import Foundation
 
+typealias JSONDictionary = [ String: Any]
+
 enum Result<A> {
   case success(A)
   case error(Error)

@@ -11,7 +11,7 @@ import Foundation
 struct QuoteResponse: Codable {
   let id: String
   let quote: String
-  let createdAt: Date
+  let createdAt: String
   let author: AuthorResponse
   
   enum CodingKeys: String, CodingKey {
@@ -32,7 +32,7 @@ extension QuoteResponse {
     let container = try decoder.container(keyedBy: CodingKeys.self)
     id = try container.decode(String.self, forKey: .id)
     quote = try container.decode(String.self, forKey: .quote)
-    createdAt = try container.decode(Date.self, forKey: .createdAt)
+    createdAt = try container.decode(String.self, forKey: .createdAt)
     
     let authorContainer = try container.nestedContainer(keyedBy: AuthorCodingKeys.self, forKey: .author)
     let authorId = try authorContainer.decode(String.self, forKey: .objectId)

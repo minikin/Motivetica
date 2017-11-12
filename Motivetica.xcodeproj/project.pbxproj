@@ -33,7 +33,6 @@
 		CE6E6C621FA608DA002FF3DB /* CellDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6C611FA608DA002FF3DB /* CellDescriptor.swift */; };
 		CE6E6C641FA60944002FF3DB /* ItemsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E6C631FA60944002FF3DB /* ItemsDataSource.swift */; };
 		CE7CE2201FA9F12400E05AF3 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CE21F1FA9F12400E05AF3 /* Theme.swift */; };
-		CE8453F91FB87C81009F6FA6 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8453F81FB87C81009F6FA6 /* APIResult.swift */; };
 		CE94F1C41FB88B6C001F0196 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94F1C31FB88B6C001F0196 /* Author.swift */; };
 		CE94F1C61FB88BAA001F0196 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94F1C51FB88BAA001F0196 /* Quote.swift */; };
 		CEB9938A1F73203C00083A2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB993891F73203C00083A2F /* AppDelegate.swift */; };
@@ -118,7 +117,6 @@
 		CE6E6C611FA608DA002FF3DB /* CellDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDescriptor.swift; sourceTree = "<group>"; };
 		CE6E6C631FA60944002FF3DB /* ItemsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsDataSource.swift; sourceTree = "<group>"; };
 		CE7CE21F1FA9F12400E05AF3 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		CE8453F81FB87C81009F6FA6 /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
 		CE94F1C31FB88B6C001F0196 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		CE94F1C51FB88BAA001F0196 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		CEB993861F73203C00083A2F /* Motivetica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motivetica.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -508,7 +506,6 @@
 			isa = PBXGroup;
 			children = (
 				CEEF0DF31FB8FC6C008B3232 /* Result.swift */,
-				CE8453F81FB87C81009F6FA6 /* APIResult.swift */,
 				CED683831FB884DF00C88151 /* AuthorResponse.swift */,
 				CED01B571FB8773700825EDF /* PagedResponse.swift */,
 				CED683851FB884EA00C88151 /* QuoteResponse.swift */,
@@ -923,7 +920,6 @@
 				033EF1B71F82E49A003808AF /* Motivetica.xcdatamodeld in Sources */,
 				CE2B78391F9D3F8000E45E16 /* QuotesListViewController.swift in Sources */,
 				CE1EA7B11FA62C3F005C93C9 /* NSManagedObjectContext.swift in Sources */,
-				CE8453F91FB87C81009F6FA6 /* APIResult.swift in Sources */,
 				CE6E6C621FA608DA002FF3DB /* CellDescriptor.swift in Sources */,
 				CE6E6C641FA60944002FF3DB /* ItemsDataSource.swift in Sources */,
 				CEEF0DF41FB8FC6C008B3232 /* Result.swift in Sources */,

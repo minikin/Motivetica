@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import CodableAlamofire
 
 enum APIError: Error {
   case notAuthenticated
@@ -30,7 +31,7 @@ class MotiveticaAPIClient {
   
   // MARK: -
   
-  func getAllQuotes(_ completion: @escaping (QuoteResponse) -> Void) {
+  func getAllQuotes(_ completion: @escaping ([QuoteResponse]) -> Void) {
     
     let parameters = [
        "include": "author"
@@ -39,18 +40,15 @@ class MotiveticaAPIClient {
     guard let quotesRequest = MotiveticaAPIRouter.readAllQuotes(parameters: parameters).urlRequest else {
       return
     }
+    
+    let decoder = JSONDecoder()
+    decoder.dateDecodingStrategy = .iso8601
+    
     sessionManager.request(quotesRequest)
       .validate(statusCode: 200..<300)
       .validate(contentType: ["application/json"])
-      .responseJSON { json in
-        print(json)
-      }
-      .responseData { dataResponse in
-        guard let data = dataResponse.data else { return }
-        let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .iso8601
-        let quoteResponse = try! decoder.decode(QuoteResponse.self, from: data)
-        completion(quoteResponse)
+      .responseDecodableObject(keyPath: "results", decoder: decoder) { (response: DataResponse<[QuoteResponse]>) in
+        completion(response.value!)
     }
   }
 }
