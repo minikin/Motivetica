@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct QuoteResponse: Codable {
   let id: String
@@ -50,5 +51,21 @@ extension QuoteResponse: Comparable {
     return
       lhs.id == rhs.id &&
       lhs.quote == rhs.quote
+  }
+}
+
+extension QuoteResponse {
+  func configureCell(_ cell: QuotesCell) {
+    cell.textView.text = quote
+    
+    while cell.textView.contentSize.height > cell.textView.frame.size.height {
+      cell.textView.font = UIFont(name: "Helvetica Neue", size: CGFloat((cell.textView.font?.pointSize)! - 1))
+    }
+  }
+}
+
+extension QuoteResponse {
+  var cellDescriptor: CellDescriptor {
+    return CellDescriptor(reuseIdentifier: "QuoteCell", configure: self.configureCell)
   }
 }
