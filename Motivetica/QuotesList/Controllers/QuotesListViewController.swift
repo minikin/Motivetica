@@ -34,7 +34,6 @@ final class QuotesListViewController: UIViewController {
     
     quotesCollectionView.dataSource = quotesDataSourse
     quotesCollectionView.delegate = self
-    quotesCollectionView.isPagingEnabled = true
   }
   
   override func viewWillAppear(_ animated: Bool) {
