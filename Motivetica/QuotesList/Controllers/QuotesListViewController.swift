@@ -34,6 +34,7 @@ final class QuotesListViewController: UIViewController {
     
     quotesCollectionView.dataSource = quotesDataSourse
     quotesCollectionView.delegate = self
+    quotesCollectionView.isPagingEnabled = true
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -130,9 +131,8 @@ final class QuotesListViewController: UIViewController {
     changeThemeButton.imageView?.tintColor = Theme.current.globalTintColor
     backButton.setTitleColor(Theme.current.globalTintColor, for: .normal)
     saveButton.setTitleColor(Theme.current.globalTintColor, for: .normal)
+    quotesCollectionView.reloadData()
   }
 }
 
-extension QuotesListViewController: UICollectionViewDelegate {
-  
-}
+extension QuotesListViewController: UICollectionViewDelegate {}

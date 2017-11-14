@@ -58,9 +58,13 @@ extension QuoteResponse {
   func configureCell(_ cell: QuotesCell) {
     cell.textView.text = quote
     
-    while cell.textView.contentSize.height > cell.textView.frame.size.height {
-      cell.textView.font = UIFont(name: "Helvetica Neue", size: CGFloat((cell.textView.font?.pointSize)! - 1))
-    }
+    cell.textView.textColor = Theme.current.globalTintColor
+    cell.textView.backgroundColor = Theme.current.mainColor
+    cell.contentView.backgroundColor = Theme.current.mainColor
+    cell.contentView.layer.borderColor = Theme.current.globalTintColor.cgColor
+    cell.contentView.layer.borderWidth = 2
+    
+
   }
 }
 
