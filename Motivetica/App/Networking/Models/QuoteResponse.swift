@@ -42,17 +42,17 @@ extension QuoteResponse {
   }
 }
 
-extension QuoteResponse: Comparable {
-  var hashValue: Int {
-    return id.djb2hash ^ quote.djb2hash
-  }
-  
-  static func == (lhs: QuoteResponse, rhs: QuoteResponse) -> Bool {
-    return
-      lhs.id == rhs.id &&
-      lhs.quote == rhs.quote
-  }
-}
+//extension QuoteResponse: Comparable {
+//  var hashValue: Int {
+//    return id.djb2hash ^ quote.djb2hash
+//  }
+//  
+//  static func == (lhs: QuoteResponse, rhs: QuoteResponse) -> Bool {
+//    return
+//      lhs.id == rhs.id &&
+//      lhs.quote == rhs.quote
+//  }
+//}
 
 extension QuoteResponse {
   func configureCell(_ cell: QuotesCell) {

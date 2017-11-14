@@ -56,7 +56,7 @@ final class QuotesListViewController: UIViewController {
   }
   
   private func setupDataForCollectionView() {
-    quotesDataSourse.items = quotes
+    quotesDataSourse.items = quotes.shuffled()
     quotesCollectionView.dataSource = quotesDataSourse
     quotesCollectionView.reloadData()
   }
