@@ -12,24 +12,23 @@ final class HomeViewController: UIViewController {
   
   // MARK: - IBOutlets
   @IBOutlet var backgroundView: UIView!
-  @IBOutlet weak var motiveticaLogo: UIImageView!
-  @IBOutlet weak var manaLabel: UILabel!
-  @IBOutlet weak var arrowRight: UIImageView!
-  @IBOutlet weak var typeOwnLabel: UILabel!
-  @IBOutlet weak var arrowLeft: UIImageView!
+  @IBOutlet private weak var motiveticaLogo: UIImageView!
+  @IBOutlet private weak var manaLabel: UILabel!
+  @IBOutlet private weak var arrowRight: UIImageView!
+  @IBOutlet private weak var typeOwnLabel: UILabel!
+  @IBOutlet private weak var arrowLeft: UIImageView!
   
   // MARK: - Properties
-  let apiClient = MotiveticaAPIClient()
+  private let apiClient = MotiveticaAPIClient()
+  private var quotes = [QuoteResponse]()
 
   // MARK: - ViewController LifeCycle
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    apiClient.getAllQuotes { quotes in
-      print("MotiveticaAPIClient: \n", quotes)
-      for quote in quotes {
-        print(quote.author.name)
-      }
+    apiClient.getAllQuotes { result in
+      print("MotiveticaAPIClient: \n", result)
+      self.quotes = result
     }
   }
 
@@ -47,8 +46,9 @@ final class HomeViewController: UIViewController {
     guard let identifier = segue.identifier else {
       return
     }
-    if identifier == "" {
-      
+    if identifier == "toQuotesList" {
+      let destinationVC = segue.destination as! QuotesListViewController
+      destinationVC.quotes =  quotes
     }
   }
   
@@ -61,5 +61,4 @@ final class HomeViewController: UIViewController {
     arrowRight.tintColor = Theme.current.globalTintColor
     arrowLeft.tintColor = Theme.current.globalTintColor
   }
-  
 }

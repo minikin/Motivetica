@@ -11,23 +11,29 @@ import UIKit
 final class QuotesListViewController: UIViewController {
   
   // MARK: - Outlets
-  @IBOutlet weak var currentTimeLabel: UILabel!
-  @IBOutlet weak var currentDayLabel: UILabel!
-  @IBOutlet weak var backgroundView: UIView!
-  @IBOutlet weak var quotesCollectionView: UICollectionView!
-  @IBOutlet weak var backButton: UIButton!
-  @IBOutlet weak var saveButton: UIButton!
-  @IBOutlet weak var changeThemeButton: UIButton!
-  @IBOutlet weak var tempView: UIView!
+  @IBOutlet private weak var currentTimeLabel: UILabel!
+  @IBOutlet private weak var currentDayLabel: UILabel!
+  @IBOutlet private weak var backgroundView: UIView!
+  @IBOutlet private weak var quotesCollectionView: UICollectionView!
+  @IBOutlet private weak var backButton: UIButton!
+  @IBOutlet private weak var saveButton: UIButton!
+  @IBOutlet private weak var changeThemeButton: UIButton!
   // MARK: - Properties
   private var timer: Timer?
   private let clock = Clock()
+  var quotes = [QuoteResponse]()
+  private var quotesDataSourse = ItemsDataSource(items: [QuoteResponse](),
+                                                 cellDescriptor: { $0.cellDescriptor })
   
   // MARK: - ViewController LifeCycle
   override func viewDidLoad() {
     super.viewDidLoad()
+    
     currentDayLabel.text = clock.currentDayOfTheWeek
     currentTimeLabel.text = clock.currentTime
+    
+    quotesCollectionView.dataSource = quotesDataSourse
+    quotesCollectionView.delegate = self
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -40,12 +46,19 @@ final class QuotesListViewController: UIViewController {
         self?.currentDayLabel.text = self?.clock.currentDayOfTheWeek
         self?.currentTimeLabel.text = self?.clock.currentTime
     })
+    setupDataForCollectionView()
   }
   
   override func viewDidDisappear(_ animated: Bool) {
     super.viewDidDisappear(animated)
     timer?.invalidate()
     timer = nil
+  }
+  
+  private func setupDataForCollectionView() {
+    quotesDataSourse.items = quotes.shuffled()
+    quotesCollectionView.dataSource = quotesDataSourse
+    quotesCollectionView.reloadData()
   }
   
   // MARK: - Actions
@@ -72,11 +85,9 @@ final class QuotesListViewController: UIViewController {
 
   // MARK: - Helpers
   private func combineViews() -> UIView? {
-    guard let mainView = backgroundView,
-      let childView = tempView else {
+    guard let mainView = backgroundView else {
         return nil
     }
-    mainView.addSubview(childView)
     return mainView
   }
   
@@ -119,5 +130,8 @@ final class QuotesListViewController: UIViewController {
     changeThemeButton.imageView?.tintColor = Theme.current.globalTintColor
     backButton.setTitleColor(Theme.current.globalTintColor, for: .normal)
     saveButton.setTitleColor(Theme.current.globalTintColor, for: .normal)
+    quotesCollectionView.reloadData()
   }
 }
+
+extension QuotesListViewController: UICollectionViewDelegate {}

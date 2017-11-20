@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct QuoteResponse: Codable {
   let id: String
@@ -41,14 +42,34 @@ extension QuoteResponse {
   }
 }
 
-extension QuoteResponse: Comparable {
-  var hashValue: Int {
-    return id.djb2hash ^ quote.djb2hash
+//extension QuoteResponse: Comparable {
+//  var hashValue: Int {
+//    return id.djb2hash ^ quote.djb2hash
+//  }
+//  
+//  static func == (lhs: QuoteResponse, rhs: QuoteResponse) -> Bool {
+//    return
+//      lhs.id == rhs.id &&
+//      lhs.quote == rhs.quote
+//  }
+//}
+
+extension QuoteResponse {
+  func configureCell(_ cell: QuotesCell) {
+    cell.textView.text = quote
+    
+    cell.textView.textColor = Theme.current.globalTintColor
+    cell.textView.backgroundColor = Theme.current.mainColor
+    cell.contentView.backgroundColor = Theme.current.mainColor
+    cell.contentView.layer.borderColor = Theme.current.globalTintColor.cgColor
+    cell.contentView.layer.borderWidth = 2
+    
+
   }
-  
-  static func == (lhs: QuoteResponse, rhs: QuoteResponse) -> Bool {
-    return
-      lhs.id == rhs.id &&
-      lhs.quote == rhs.quote
+}
+
+extension QuoteResponse {
+  var cellDescriptor: CellDescriptor {
+    return CellDescriptor(reuseIdentifier: "QuoteCell", configure: self.configureCell)
   }
 }
