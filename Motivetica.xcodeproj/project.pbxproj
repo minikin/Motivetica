@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		032DD1191FC4DCDF0005AAEE /* FontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032DD1181FC4DCDF0005AAEE /* FontType.swift */; };
+		032DD11B1FC4DFB50005AAEE /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032DD11A1FC4DFB50005AAEE /* UILabel+Extension.swift */; };
 		033EF1B71F82E49A003808AF /* Motivetica.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 033EF1B41F82E2F9003808AF /* Motivetica.xcdatamodeld */; };
 		4346E86BFF38C555C843792B /* Pods_MotiveticaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C77F4F28FB4CFFBA142C481 /* Pods_MotiveticaTests.framework */; };
 		4C07186AF50C8E356BA08FF9 /* Pods_MotiveticaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F2CCCAF1862F5981A2E6B9 /* Pods_MotiveticaUITests.framework */; };
@@ -86,6 +87,7 @@
 
 /* Begin PBXFileReference section */
 		032DD1181FC4DCDF0005AAEE /* FontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontType.swift; sourceTree = "<group>"; };
+		032DD11A1FC4DFB50005AAEE /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		033EF1B51F82E2F9003808AF /* Motivetica.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Motivetica.xcdatamodel; sourceTree = "<group>"; };
 		064C13A7094BF6D861F6AA6B /* Pods-MotiveticaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotiveticaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MotiveticaUITests/Pods-MotiveticaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2AD4669921A6EB4F184195C8 /* Pods-MotiveticaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotiveticaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MotiveticaTests/Pods-MotiveticaTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -313,6 +315,7 @@
 				CE03DF921FA893A900EFFB40 /* GlobalFunctions.swift */,
 				CE44620E1FB8B0FF0064A9AC /* HashFunctions.swift */,
 				CE15D75D1FBA685400E3ABF1 /* ShuffleArray.swift */,
+				032DD11A1FC4DFB50005AAEE /* UILabel+Extension.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -927,6 +930,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032DD11B1FC4DFB50005AAEE /* UILabel+Extension.swift in Sources */,
 				CE15D75E1FBA685400E3ABF1 /* ShuffleArray.swift in Sources */,
 				CE03DF931FA893A900EFFB40 /* GlobalFunctions.swift in Sources */,
 				CED01B5A1FB877DD00825EDF /* MotiveticaAPIClient.swift in Sources */,
