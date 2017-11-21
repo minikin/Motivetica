@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		032DD1191FC4DCDF0005AAEE /* FontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032DD1181FC4DCDF0005AAEE /* FontType.swift */; };
 		033EF1B71F82E49A003808AF /* Motivetica.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 033EF1B41F82E2F9003808AF /* Motivetica.xcdatamodeld */; };
 		4346E86BFF38C555C843792B /* Pods_MotiveticaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C77F4F28FB4CFFBA142C481 /* Pods_MotiveticaTests.framework */; };
 		4C07186AF50C8E356BA08FF9 /* Pods_MotiveticaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F2CCCAF1862F5981A2E6B9 /* Pods_MotiveticaUITests.framework */; };
@@ -84,6 +85,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		032DD1181FC4DCDF0005AAEE /* FontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontType.swift; sourceTree = "<group>"; };
 		033EF1B51F82E2F9003808AF /* Motivetica.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Motivetica.xcdatamodel; sourceTree = "<group>"; };
 		064C13A7094BF6D861F6AA6B /* Pods-MotiveticaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotiveticaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MotiveticaUITests/Pods-MotiveticaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2AD4669921A6EB4F184195C8 /* Pods-MotiveticaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotiveticaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MotiveticaTests/Pods-MotiveticaTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -402,6 +404,7 @@
 				CEF47C7A1FB26FCA00FB61FE /* Clock.swift */,
 				CE94F1C51FB88BAA001F0196 /* Quote.swift */,
 				033EF1B41F82E2F9003808AF /* Motivetica.xcdatamodeld */,
+				032DD1181FC4DCDF0005AAEE /* FontType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -948,6 +951,7 @@
 				CE1EA7B11FA62C3F005C93C9 /* NSManagedObjectContext.swift in Sources */,
 				CE6E6C621FA608DA002FF3DB /* CellDescriptor.swift in Sources */,
 				CE6E6C641FA60944002FF3DB /* ItemsDataSource.swift in Sources */,
+				032DD1191FC4DCDF0005AAEE /* FontType.swift in Sources */,
 				CEEF0DF41FB8FC6C008B3232 /* Result.swift in Sources */,
 				CEB9938A1F73203C00083A2F /* AppDelegate.swift in Sources */,
 				CE1EA7AF1FA62C22005C93C9 /* NSManagedObject.swift in Sources */,
