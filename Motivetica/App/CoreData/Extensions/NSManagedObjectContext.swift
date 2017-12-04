@@ -2,7 +2,7 @@
 //  NSManagedObjectContext.swift
 //  Motivetica
 //
-//  Created by Sasha MinProkhorenkoikin on 10/29/17.
+//  Created by Sasha Prokhorenko on 10/29/17.
 //  Copyright © 2017 Sasha Prokhorenko. All rights reserved.
 //
 
