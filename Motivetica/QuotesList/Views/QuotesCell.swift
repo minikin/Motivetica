@@ -13,7 +13,6 @@ final class QuotesCell: UICollectionViewCell {
   // MARK: - Outlets
   @IBOutlet weak var textView: UITextView!
   
-
   // MARK: - View Lifecycle
   override func prepareForReuse() {
     

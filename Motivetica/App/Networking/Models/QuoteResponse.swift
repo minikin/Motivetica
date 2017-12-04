@@ -64,7 +64,6 @@ extension QuoteResponse {
     cell.contentView.layer.borderColor = Theme.current.globalTintColor.cgColor
     cell.contentView.layer.borderWidth = 2
     
-
   }
 }
 
