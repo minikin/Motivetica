@@ -42,7 +42,6 @@ final class QuotesListViewController: UIViewController {
     timer =  Timer.scheduledTimer(withTimeInterval: 1.0,
                                   repeats: true,
                                   block: { [weak self] _ in
-
         self?.currentDayLabel.text = self?.clock.currentDayOfTheWeek
         self?.currentTimeLabel.text = self?.clock.currentTime
     })

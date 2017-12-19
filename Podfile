@@ -11,6 +11,15 @@ target 'Motivetica' do
   pod 'Alamofire'
   pod 'CodableAlamofire'
   pod 'AlamofireNetworkActivityIndicator'
+	
+	# Firebase pods
+	pod 'Firebase/Core'
+	pod 'Firebase/Crash'
+	pod 'Firebase/RemoteConfig'
+	pod 'Firebase/Storage'
+	pod 'Firebase/Performance'
+	pod 'Firebase/Firestore'
+	
   
   target 'MotiveticaTests' do
     inherit! :search_paths

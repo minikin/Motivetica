@@ -59,7 +59,6 @@ extension QuoteResponse: Comparable {
 extension QuoteResponse {
   func configureCell(_ cell: QuotesCell) {
     cell.textView.text = quote
-    
     cell.textView.textColor = Theme.current.globalTintColor
     cell.textView.backgroundColor = Theme.current.mainColor
     cell.contentView.backgroundColor = Theme.current.mainColor
