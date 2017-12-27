@@ -1,5 +1,3 @@
-License
-
 Copyright (c) 2017 Sasha Prokhorenko
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
